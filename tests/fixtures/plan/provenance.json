@@ -1,0 +1,82 @@
+[
+  {
+    "file": "plan-created.jsonl",
+    "source": "rollout-2026-08-24T18-28-21-01a03350-6564-77e1-bf41-9352dc9813c2.jsonl",
+    "lines": [
+      1,
+      24,
+      25,
+      32,
+      33
+    ],
+    "writer": "0.149.1"
+  },
+  {
+    "file": "plan-updated.jsonl",
+    "source": "rollout-2026-08-24T18-28-21-01a03350-6564-77e1-bf41-9352dc9813c2.jsonl",
+    "lines": [
+      57,
+      58
+    ],
+    "writer": "0.149.1"
+  },
+  {
+    "file": "plan-progress.jsonl",
+    "source": "rollout-2026-08-24T18-28-21-01a03350-6564-77e1-bf41-9352dc9813c2.jsonl",
+    "lines": [
+      101,
+      102
+    ],
+    "writer": "0.149.1"
+  },
+  {
+    "file": "plan-completed.jsonl",
+    "source": "rollout-2026-08-24T18-28-21-01a03350-6564-77e1-bf41-9352dc9813c2.jsonl",
+    "lines": [
+      106,
+      107
+    ],
+    "writer": "0.149.1"
+  },
+  {
+    "file": "plan-turn-completed.jsonl",
+    "source": "rollout-2026-08-24T18-28-21-01a03350-6564-77e1-bf41-9352dc9813c2.jsonl",
+    "lines": [
+      112
+    ],
+    "writer": "0.149.1"
+  },
+  {
+    "file": "multiple-updates.jsonl",
+    "source": "rollout-2026-08-24T18-28-21-01a03350-6564-77e1-bf41-9352dc9813c2.jsonl",
+    "lines": [
+      1,
+      24,
+      25,
+      32,
+      33,
+      57,
+      58,
+      101,
+      102,
+      106,
+      107,
+      112
+    ],
+    "writer": "0.149.1"
+  },
+  {
+    "file": "plan-update-rejected.jsonl",
+    "source": "rollout-2026-08-26T12-12-14-01a03c44-c140-7cc0-8129-260bfa321ece.jsonl",
+    "lines": [
+      1,
+      73,
+      74,
+      92,
+      93,
+      97,
+      98
+    ],
+    "writer": "0.149.1"
+  }
+]

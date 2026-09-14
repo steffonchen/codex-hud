@@ -1,0 +1,13 @@
+{
+  "codex": "0.154.0",
+  "schema": "本机 generate-json-schema --experimental 导出",
+  "runtime_verified": false,
+  "files": {
+    "ThreadTokenUsageUpdatedNotification.json": "aba4f6c7e4a19b2b842c08ee793b57000c07dafd57b922ad0d8e7c76609108c2",
+    "TurnPlanUpdatedNotification.json": "2522f743be0a1e9666dec5ad4f18d8ecba3c4f16e66d510b1491d4117d1dd0ba",
+    "ItemStartedNotification.json": "c4c34f47db6326cd4841bae428f23d08eb285077ffad35be9772b928c65bb912",
+    "ItemCompletedNotification.json": "69aba3fe5f72f38bf5c541e7e2c09de40778abe65ff969d9fc73372037812091",
+    "ThreadStatusChangedNotification.json": "26f3c60c1b73f7fa2d31c74429cdc36f8746c76c33e3d314b3fb61d3661f05f6",
+    "AccountRateLimitsUpdatedNotification.json": "8252ed2af807bebce56e9c042b6848300c7c52ba7a8162dc50d320709fa3b078"
+  }
+}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-09-11T22:23:58.055Z","type":"response_item","payload":{"type":"custom_tool_call","id":"id-1","call_id":"call-2","name":"exec","status":"completed","internal_chat_message_metadata_passthrough":{"turn_id":"turn-3"},"input":"text(await tools.exec_command({cmd: \"npm test\"}));"}}

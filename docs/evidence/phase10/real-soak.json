@@ -1,0 +1,5934 @@
+{
+  "evidence": "真实 Codex 当前任务的只读观测；完整渲染至内存终端，不代表物理 TTY 或未发生的 runtime 重启已验证",
+  "node": "v23.11.0",
+  "os": "darwin",
+  "arch": "arm64",
+  "codex": "codex-cli 0.154.0",
+  "rollout": "0.153.4",
+  "buildSha256": "40646bf8c5ba034050a3a881921b2b565a6204d7d47e8e4ce3570a6bd278858f",
+  "gcAvailable": true,
+  "requestedMinutes": 30,
+  "samples": [
+    {
+      "elapsedMs": 0.11820800000009513,
+      "cpuMs": 19.241,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 10089266,
+        "stateTotal": 10089266
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9044648,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 186074,
+        "contextWindow": 258400,
+        "remainingTokens": 72326,
+        "usedPercent": 72.01006191950464
+      },
+      "usageRequests": 73,
+      "totalTokens": 10089266,
+      "activity": "running",
+      "toolActive": 1,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "failed",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789296707095,
+          "ageMs": 263,
+          "lastCheckedAt": 1789296707358,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1784,
+          "accepted": 1784,
+          "processed": 1784,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1554,
+          "rawInvalid": 0,
+          "rawUnknown": 734
+        },
+        "渲染": {
+          "count": 2,
+          "errors": 0,
+          "lastRenderAt": 1789296707313
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 0,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 2,
+            "lastMs": 36.42441699999995,
+            "maxMs": 38.09129199999995,
+            "meanMs": 37.25785449999995
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1784,
+            "lastMs": 0.003291999999987638,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.0045317326233197215
+          },
+          "reducer": {
+            "count": 1784,
+            "lastMs": 0.0029999999999290594,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005247158632287852
+          },
+          "reducerToRender": {
+            "count": 1,
+            "lastMs": 76.19687499999998,
+            "maxMs": 76.19687499999998,
+            "meanMs": 76.19687499999998
+          },
+          "render": {
+            "count": 2,
+            "lastMs": 4.868749999999977,
+            "maxMs": 4.868749999999977,
+            "meanMs": 3.7517705000000205
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 16496512,
+          "rss": 102760448,
+          "toolCount": 21,
+          "agentCount": 6,
+          "historySize": 73,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 623,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 1,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 5
+      },
+      "bytesWritten": 1315,
+      "writes": 3,
+      "errors": []
+    },
+    {
+      "elapsedMs": 60109.627542,
+      "cpuMs": 952.17,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 10464560,
+        "stateTotal": 10464560
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9226614,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 188271,
+        "contextWindow": 258400,
+        "remainingTokens": 70129,
+        "usedPercent": 72.86029411764706
+      },
+      "usageRequests": 75,
+      "totalTokens": 10464560,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789296743507,
+          "ageMs": 23989,
+          "lastCheckedAt": 1789296767496,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1798,
+          "accepted": 1798,
+          "processed": 1798,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1566,
+          "rawInvalid": 0,
+          "rawUnknown": 739
+        },
+        "渲染": {
+          "count": 94,
+          "errors": 0,
+          "lastRenderAt": 1789296767361
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 5,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 23,
+            "lastMs": 61.32879200000025,
+            "maxMs": 73.97091699999874,
+            "meanMs": 63.33171939130469
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1798,
+            "lastMs": 0.008832999999867752,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004619614571747325
+          },
+          "reducer": {
+            "count": 1798,
+            "lastMs": 0.006833999999798834,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005311581757514452
+          },
+          "reducerToRender": {
+            "count": 5,
+            "lastMs": 5.336957999999868,
+            "maxMs": 76.19687499999998,
+            "meanMs": 19.84491659999992
+          },
+          "render": {
+            "count": 94,
+            "lastMs": 2.044957999998587,
+            "maxMs": 5.512957999999799,
+            "meanMs": 2.3875784468084644
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 16326912,
+          "rss": 88358912,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 75,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 628,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 1,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 5
+      },
+      "bytesWritten": 9281,
+      "writes": 68,
+      "errors": []
+    },
+    {
+      "elapsedMs": 120270.57158300001,
+      "cpuMs": 1797.472,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 10464560,
+        "stateTotal": 10464560
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9237082,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 188271,
+        "contextWindow": 258400,
+        "remainingTokens": 70129,
+        "usedPercent": 72.86029411764706
+      },
+      "usageRequests": 75,
+      "totalTokens": 10464560,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789296827211,
+          "ageMs": 438,
+          "lastCheckedAt": 1789296827649,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1802,
+          "accepted": 1802,
+          "processed": 1802,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1570,
+          "rawInvalid": 0,
+          "rawUnknown": 743
+        },
+        "渲染": {
+          "count": 197,
+          "errors": 0,
+          "lastRenderAt": 1789296827541
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 44,
+            "lastMs": 52.705999999991036,
+            "maxMs": 80.43024999999034,
+            "meanMs": 64.49744415909093
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1802,
+            "lastMs": 0.0056250000052386895,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004639997780244159
+          },
+          "reducer": {
+            "count": 1802,
+            "lastMs": 0.0006670000002486631,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005304809101007837
+          },
+          "reducerToRender": {
+            "count": 7,
+            "lastMs": 5.739707999993698,
+            "maxMs": 76.19687499999998,
+            "meanMs": 15.799202285712763
+          },
+          "render": {
+            "count": 197,
+            "lastMs": 2.9731250000040745,
+            "maxMs": 5.512957999999799,
+            "meanMs": 2.3605380609137625
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 21201632,
+          "rss": 101384192,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 75,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 628,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 4
+      },
+      "bytesWritten": 15884,
+      "writes": 130,
+      "errors": []
+    },
+    {
+      "elapsedMs": 180429.418958,
+      "cpuMs": 2590.814,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 10661813,
+        "stateTotal": 10661813
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9291975,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 197253,
+        "contextWindow": 258400,
+        "remainingTokens": 61147,
+        "usedPercent": 76.33630030959753
+      },
+      "usageRequests": 76,
+      "totalTokens": 10661813,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789296874862,
+          "ageMs": 12961,
+          "lastCheckedAt": 1789296887823,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1813,
+          "accepted": 1813,
+          "processed": 1813,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1580,
+          "rawInvalid": 0,
+          "rawUnknown": 746
+        },
+        "渲染": {
+          "count": 298,
+          "errors": 0,
+          "lastRenderAt": 1789296887593
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 65,
+            "lastMs": 68.0740409999853,
+            "maxMs": 80.43024999999034,
+            "meanMs": 65.27526603076812
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1813,
+            "lastMs": 0.007082999974954873,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004679986762304846
+          },
+          "reducer": {
+            "count": 1813,
+            "lastMs": 0.006457999988924712,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005352717043576381
+          },
+          "reducerToRender": {
+            "count": 9,
+            "lastMs": 5.409791999991285,
+            "maxMs": 76.19687499999998,
+            "meanMs": 13.547777666666295
+          },
+          "render": {
+            "count": 298,
+            "lastMs": 3.0981249999895226,
+            "maxMs": 5.512957999999799,
+            "meanMs": 2.3334360838923467
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 26546864,
+          "rss": 106266624,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 76,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 634,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 22778,
+      "writes": 192,
+      "errors": []
+    },
+    {
+      "elapsedMs": 240614.514667,
+      "cpuMs": 3411.941,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 10862220,
+        "stateTotal": 10862220
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9378037,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 200407,
+        "contextWindow": 258400,
+        "remainingTokens": 57993,
+        "usedPercent": 77.55688854489165
+      },
+      "usageRequests": 77,
+      "totalTokens": 10862220,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789296907517,
+          "ageMs": 40493,
+          "lastCheckedAt": 1789296948010,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1822,
+          "accepted": 1822,
+          "processed": 1822,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1588,
+          "rawInvalid": 0,
+          "rawUnknown": 749
+        },
+        "渲染": {
+          "count": 399,
+          "errors": 0,
+          "lastRenderAt": 1789296947707
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 86,
+            "lastMs": 67.49291699999594,
+            "maxMs": 80.62562499998603,
+            "meanMs": 65.89596172092904
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1822,
+            "lastMs": 0.005999999993946403,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004704322173459067
+          },
+          "reducer": {
+            "count": 1822,
+            "lastMs": 0.004542000009678304,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.00538141273327875
+          },
+          "reducerToRender": {
+            "count": 11,
+            "lastMs": 5.359582999983104,
+            "maxMs": 76.19687499999998,
+            "meanMs": 12.073768818180508
+          },
+          "render": {
+            "count": 399,
+            "lastMs": 2.6059580000001006,
+            "maxMs": 5.512957999999799,
+            "meanMs": 2.310618406014431
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 16310544,
+          "rss": 123813888,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 77,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 638,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 29717,
+      "writes": 254,
+      "errors": []
+    },
+    {
+      "elapsedMs": 300796.359625,
+      "cpuMs": 4198.877,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11068427,
+        "stateTotal": 11068427
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9401221,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 206207,
+        "contextWindow": 258400,
+        "remainingTokens": 52193,
+        "usedPercent": 79.80147058823529
+      },
+      "usageRequests": 78,
+      "totalTokens": 11068427,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789296997645,
+          "ageMs": 10555,
+          "lastCheckedAt": 1789297008200,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1835,
+          "accepted": 1835,
+          "processed": 1835,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1600,
+          "rawInvalid": 0,
+          "rawUnknown": 756
+        },
+        "渲染": {
+          "count": 500,
+          "errors": 0,
+          "lastRenderAt": 1789297007808
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 107,
+            "lastMs": 73.71133299998473,
+            "maxMs": 80.62562499998603,
+            "meanMs": 65.82548443925121
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1835,
+            "lastMs": 0.019582999986596406,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004768451226156341
+          },
+          "reducer": {
+            "count": 1835,
+            "lastMs": 0.04312499996740371,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005421081198959759
+          },
+          "reducerToRender": {
+            "count": 16,
+            "lastMs": 5.91883300000336,
+            "maxMs": 76.19687499999998,
+            "meanMs": 10.025830562500026
+          },
+          "render": {
+            "count": 500,
+            "lastMs": 1.5387910000281408,
+            "maxMs": 5.512957999999799,
+            "meanMs": 2.2895454839999134
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 20632832,
+          "rss": 112427008,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 78,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 642,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 36720,
+      "writes": 314,
+      "errors": []
+    },
+    {
+      "elapsedMs": 360988.274792,
+      "cpuMs": 5049.733,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11276570,
+        "stateTotal": 11276570
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9417357,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 208143,
+        "contextWindow": 258400,
+        "remainingTokens": 50257,
+        "usedPercent": 80.55069659442724
+      },
+      "usageRequests": 79,
+      "totalTokens": 11276570,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297042785,
+          "ageMs": 25602,
+          "lastCheckedAt": 1789297068387,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1843,
+          "accepted": 1843,
+          "processed": 1843,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1607,
+          "rawInvalid": 0,
+          "rawUnknown": 759
+        },
+        "渲染": {
+          "count": 601,
+          "errors": 0,
+          "lastRenderAt": 1789297067924
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 128,
+            "lastMs": 69.69604200002505,
+            "maxMs": 80.62562499998603,
+            "meanMs": 66.06152701562482
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1843,
+            "lastMs": 0.005958000023383647,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004807504612070745
+          },
+          "reducer": {
+            "count": 1843,
+            "lastMs": 0.004541000002063811,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005472223006090328
+          },
+          "reducerToRender": {
+            "count": 18,
+            "lastMs": 4.041874999995343,
+            "maxMs": 76.19687499999998,
+            "meanMs": 9.435055388888555
+          },
+          "render": {
+            "count": 601,
+            "lastMs": 4.607833000016399,
+            "maxMs": 5.512957999999799,
+            "meanMs": 2.3367336239600505
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 19996896,
+          "rss": 115916800,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 79,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 645,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 43711,
+      "writes": 375,
+      "errors": []
+    },
+    {
+      "elapsedMs": 420181.926333,
+      "cpuMs": 5919.613,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11276570,
+        "stateTotal": 11276570
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9422443,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 208143,
+        "contextWindow": 258400,
+        "remainingTokens": 50257,
+        "usedPercent": 80.55069659442724
+      },
+      "usageRequests": 79,
+      "totalTokens": 11276570,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297088921,
+          "ageMs": 38639,
+          "lastCheckedAt": 1789297127560,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1845,
+          "accepted": 1845,
+          "processed": 1845,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1609,
+          "rawInvalid": 0,
+          "rawUnknown": 761
+        },
+        "渲染": {
+          "count": 700,
+          "errors": 0,
+          "lastRenderAt": 1789297127387
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 149,
+            "lastMs": 52.026499999978114,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.16949051006681
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1845,
+            "lastMs": 0.005166999995708466,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004814081842819843
+          },
+          "reducer": {
+            "count": 1845,
+            "lastMs": 0.0006249999860301614,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005468098103107131
+          },
+          "reducerToRender": {
+            "count": 19,
+            "lastMs": 5.569833000015933,
+            "maxMs": 76.19687499999998,
+            "meanMs": 9.23162263157947
+          },
+          "render": {
+            "count": 700,
+            "lastMs": 0.9602079999749549,
+            "maxMs": 5.590874999994412,
+            "meanMs": 2.4085699428564933
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 16800592,
+          "rss": 116834304,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 79,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 645,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 49955,
+      "writes": 434,
+      "errors": []
+    },
+    {
+      "elapsedMs": 480349.54875,
+      "cpuMs": 6766.058,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11276570,
+        "stateTotal": 11276570
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9422443,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 208143,
+        "contextWindow": 258400,
+        "remainingTokens": 50257,
+        "usedPercent": 80.55069659442724
+      },
+      "usageRequests": 79,
+      "totalTokens": 11276570,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297088921,
+          "ageMs": 98815,
+          "lastCheckedAt": 1789297187736,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1845,
+          "accepted": 1845,
+          "processed": 1845,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1609,
+          "rawInvalid": 0,
+          "rawUnknown": 761
+        },
+        "渲染": {
+          "count": 802,
+          "errors": 0,
+          "lastRenderAt": 1789297187618
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 170,
+            "lastMs": 58.29800000000978,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.1154252647065
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1845,
+            "lastMs": 0.005166999995708466,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004814081842819843
+          },
+          "reducer": {
+            "count": 1845,
+            "lastMs": 0.0006249999860301614,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005468098103107131
+          },
+          "reducerToRender": {
+            "count": 19,
+            "lastMs": 5.569833000015933,
+            "maxMs": 76.19687499999998,
+            "meanMs": 9.23162263157947
+          },
+          "render": {
+            "count": 802,
+            "lastMs": 2.06554199999664,
+            "maxMs": 5.887125000008382,
+            "meanMs": 2.485202669574951
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 15499776,
+          "rss": 120045568,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 79,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 645,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 4
+      },
+      "bytesWritten": 56305,
+      "writes": 494,
+      "errors": []
+    },
+    {
+      "elapsedMs": 540528.062875,
+      "cpuMs": 7585.089,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11487979,
+        "stateTotal": 11487979
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9446158,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 211409,
+        "contextWindow": 258400,
+        "remainingTokens": 46991,
+        "usedPercent": 81.81462848297214
+      },
+      "usageRequests": 80,
+      "totalTokens": 11487979,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297207243,
+          "ageMs": 40676,
+          "lastCheckedAt": 1789297247919,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1853,
+          "accepted": 1853,
+          "processed": 1853,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1615,
+          "rawInvalid": 0,
+          "rawUnknown": 762
+        },
+        "渲染": {
+          "count": 903,
+          "errors": 0,
+          "lastRenderAt": 1789297247662
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 191,
+            "lastMs": 66.34462500002701,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.04979081151885
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1853,
+            "lastMs": 0.008250000013504177,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004858935240172205
+          },
+          "reducer": {
+            "count": 1853,
+            "lastMs": 0.012749999994412065,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.0055232590395412895
+          },
+          "reducerToRender": {
+            "count": 21,
+            "lastMs": 5.890165999997407,
+            "maxMs": 76.19687499999998,
+            "meanMs": 8.876249809522673
+          },
+          "render": {
+            "count": 903,
+            "lastMs": 2.5042919999687,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.5043936810618934
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 21297352,
+          "rss": 112640000,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 80,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 648,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 63276,
+      "writes": 554,
+      "errors": []
+    },
+    {
+      "elapsedMs": 600700.6815,
+      "cpuMs": 8394.29,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11487979,
+        "stateTotal": 11487979
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9456646,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 211409,
+        "contextWindow": 258400,
+        "remainingTokens": 46991,
+        "usedPercent": 81.81462848297214
+      },
+      "usageRequests": 80,
+      "totalTokens": 11487979,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297295594,
+          "ageMs": 12498,
+          "lastCheckedAt": 1789297308092,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1857,
+          "accepted": 1857,
+          "processed": 1857,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1619,
+          "rawInvalid": 0,
+          "rawUnknown": 766
+        },
+        "渲染": {
+          "count": 1004,
+          "errors": 0,
+          "lastRenderAt": 1789297307706
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 212,
+            "lastMs": 66.3502500000177,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.09024194811455
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1857,
+            "lastMs": 0.009415999986231327,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.00488235002690076
+          },
+          "reducer": {
+            "count": 1857,
+            "lastMs": 0.0009169999975711107,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005516074313515596
+          },
+          "reducerToRender": {
+            "count": 23,
+            "lastMs": 5.086250000051223,
+            "maxMs": 76.19687499999998,
+            "meanMs": 8.575055956522128
+          },
+          "render": {
+            "count": 1004,
+            "lastMs": 2.697792000020854,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.511344698204826
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 26672224,
+          "rss": 114851840,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 80,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 648,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 69625,
+      "writes": 614,
+      "errors": []
+    },
+    {
+      "elapsedMs": 660885.1189169999,
+      "cpuMs": 9214.124,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11702130,
+        "stateTotal": 11702130
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9490577,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 214151,
+        "contextWindow": 258400,
+        "remainingTokens": 44249,
+        "usedPercent": 82.87577399380804
+      },
+      "usageRequests": 81,
+      "totalTokens": 11702130,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297363095,
+          "ageMs": 5182,
+          "lastCheckedAt": 1789297368277,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1868,
+          "accepted": 1868,
+          "processed": 1868,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1629,
+          "rawInvalid": 0,
+          "rawUnknown": 769
+        },
+        "渲染": {
+          "count": 1105,
+          "errors": 0,
+          "lastRenderAt": 1789297367749
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 233,
+            "lastMs": 67.24525000003632,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.19335891416563
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1868,
+            "lastMs": 0.004791999934241176,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004923660599498044
+          },
+          "reducer": {
+            "count": 1868,
+            "lastMs": 0.010999999940395355,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005566569593339425
+          },
+          "reducerToRender": {
+            "count": 25,
+            "lastMs": 34.90420800005086,
+            "maxMs": 76.19687499999998,
+            "meanMs": 9.514423120003643
+          },
+          "render": {
+            "count": 1105,
+            "lastMs": 2.278374999994412,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.5131395456990733
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 31820296,
+          "rss": 108937216,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 81,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 654,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 76587,
+      "writes": 676,
+      "errors": []
+    },
+    {
+      "elapsedMs": 720069.830417,
+      "cpuMs": 9989.942,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11702130,
+        "stateTotal": 11702130
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9495747,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 214151,
+        "contextWindow": 258400,
+        "remainingTokens": 44249,
+        "usedPercent": 82.87577399380804
+      },
+      "usageRequests": 81,
+      "totalTokens": 11702130,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297412279,
+          "ageMs": 15164,
+          "lastCheckedAt": 1789297427443,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1870,
+          "accepted": 1870,
+          "processed": 1870,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1631,
+          "rawInvalid": 0,
+          "rawUnknown": 771
+        },
+        "渲染": {
+          "count": 1203,
+          "errors": 0,
+          "lastRenderAt": 1789297426527
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 253,
+            "lastMs": 48.64191599993501,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.05236544664216
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1870,
+            "lastMs": 0.005459000007249415,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004929959358247121
+          },
+          "reducer": {
+            "count": 1870,
+            "lastMs": 0.0007079999195411801,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.0055625320857129274
+          },
+          "reducerToRender": {
+            "count": 26,
+            "lastMs": 93.6966249999823,
+            "maxMs": 93.6966249999823,
+            "meanMs": 12.752200115387438
+          },
+          "render": {
+            "count": 1203,
+            "lastMs": 3.611208999995142,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.509079446381266
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 31122280,
+          "rss": 112197632,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 81,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 654,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 83042,
+      "writes": 737,
+      "errors": []
+    },
+    {
+      "elapsedMs": 780222.9233749999,
+      "cpuMs": 10785.058,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11702130,
+        "stateTotal": 11702130
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9505487,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 214151,
+        "contextWindow": 258400,
+        "remainingTokens": 44249,
+        "usedPercent": 82.87577399380804
+      },
+      "usageRequests": 81,
+      "totalTokens": 11702130,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297477137,
+          "ageMs": 10514,
+          "lastCheckedAt": 1789297487651,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1874,
+          "accepted": 1874,
+          "processed": 1874,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1635,
+          "rawInvalid": 0,
+          "rawUnknown": 775
+        },
+        "渲染": {
+          "count": 1304,
+          "errors": 0,
+          "lastRenderAt": 1789297487603
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 275,
+            "lastMs": 37.04524999996647,
+            "maxMs": 206.67337500001304,
+            "meanMs": 66.90688439273015
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1874,
+            "lastMs": 0.005707999924197793,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004954477587828174
+          },
+          "reducer": {
+            "count": 1874,
+            "lastMs": 0.0007090000435709953,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005556172892413763
+          },
+          "reducerToRender": {
+            "count": 28,
+            "lastMs": 142.6626249999972,
+            "maxMs": 142.6626249999972,
+            "meanMs": 19.26728403571634
+          },
+          "render": {
+            "count": 1304,
+            "lastMs": 0.8952910000225529,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.488596588188171
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 21962552,
+          "rss": 115703808,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 81,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 654,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 4
+      },
+      "bytesWritten": 89498,
+      "writes": 798,
+      "errors": []
+    },
+    {
+      "elapsedMs": 840445.8088329999,
+      "cpuMs": 11567.963,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11702130,
+        "stateTotal": 11702130
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9505487,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 214151,
+        "contextWindow": 258400,
+        "remainingTokens": 44249,
+        "usedPercent": 82.87577399380804
+      },
+      "usageRequests": 81,
+      "totalTokens": 11702130,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297477137,
+          "ageMs": 70687,
+          "lastCheckedAt": 1789297547824,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1874,
+          "accepted": 1874,
+          "processed": 1874,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1635,
+          "rawInvalid": 0,
+          "rawUnknown": 775
+        },
+        "渲染": {
+          "count": 1403,
+          "errors": 0,
+          "lastRenderAt": 1789297547799
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 296,
+            "lastMs": 53.516041999915615,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.07651266554244
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1874,
+            "lastMs": 0.005707999924197793,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.004954477587828174
+          },
+          "reducer": {
+            "count": 1874,
+            "lastMs": 0.0007090000435709953,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005556172892413763
+          },
+          "reducerToRender": {
+            "count": 28,
+            "lastMs": 142.6626249999972,
+            "maxMs": 142.6626249999972,
+            "meanMs": 19.26728403571634
+          },
+          "render": {
+            "count": 1403,
+            "lastMs": 0.9640829999698326,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.4755825260136834
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 25858440,
+          "rss": 115621888,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 81,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 654,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 4
+      },
+      "bytesWritten": 95848,
+      "writes": 858,
+      "errors": []
+    },
+    {
+      "elapsedMs": 900613.766125,
+      "cpuMs": 12381.999,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11921904,
+        "stateTotal": 11921904
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9531434,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 219774,
+        "contextWindow": 258400,
+        "remainingTokens": 38626,
+        "usedPercent": 85.05185758513932
+      },
+      "usageRequests": 82,
+      "totalTokens": 11921904,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297580333,
+          "ageMs": 27665,
+          "lastCheckedAt": 1789297607998,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1880,
+          "accepted": 1880,
+          "processed": 1880,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1640,
+          "rawInvalid": 0,
+          "rawUnknown": 776
+        },
+        "渲染": {
+          "count": 1504,
+          "errors": 0,
+          "lastRenderAt": 1789297607983
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 317,
+            "lastMs": 59.77783299994189,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.02304941640459
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1880,
+            "lastMs": 0.00870900007430464,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005000455850795321
+          },
+          "reducer": {
+            "count": 1880,
+            "lastMs": 0.007624999969266355,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005623590425775692
+          },
+          "reducerToRender": {
+            "count": 29,
+            "lastMs": 5.778333000023849,
+            "maxMs": 142.6626249999972,
+            "meanMs": 18.802147793106254
+          },
+          "render": {
+            "count": 1504,
+            "lastMs": 0.9407500000670552,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.4693062380296524
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 20790272,
+          "rss": 115523584,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 82,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 657,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 4
+      },
+      "bytesWritten": 102727,
+      "writes": 918,
+      "errors": []
+    },
+    {
+      "elapsedMs": 960788.1544169999,
+      "cpuMs": 13156.871,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11921904,
+        "stateTotal": 11921904
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9541734,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 219774,
+        "contextWindow": 258400,
+        "remainingTokens": 38626,
+        "usedPercent": 85.05185758513932
+      },
+      "usageRequests": 82,
+      "totalTokens": 11921904,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297663244,
+          "ageMs": 4937,
+          "lastCheckedAt": 1789297668181,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1884,
+          "accepted": 1884,
+          "processed": 1884,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1644,
+          "rawInvalid": 0,
+          "rawUnknown": 780
+        },
+        "渲染": {
+          "count": 1605,
+          "errors": 0,
+          "lastRenderAt": 1789297668075
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 338,
+            "lastMs": 58.28633399994578,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.07825862721862
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1884,
+            "lastMs": 0.006374999997206032,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005015427282121651
+          },
+          "reducer": {
+            "count": 1884,
+            "lastMs": 0.000750000006519258,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005616648620131696
+          },
+          "reducerToRender": {
+            "count": 31,
+            "lastMs": 6.083666000049561,
+            "maxMs": 142.6626249999972,
+            "meanMs": 17.96955222581294
+          },
+          "render": {
+            "count": 1605,
+            "lastMs": 2.3642499999841675,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.4620431233617137
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 29628472,
+          "rss": 116948992,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 82,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 657,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 4
+      },
+      "bytesWritten": 109077,
+      "writes": 978,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1020955.631417,
+      "cpuMs": 13947.484,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11921904,
+        "stateTotal": 11921904
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9547076,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 219774,
+        "contextWindow": 258400,
+        "remainingTokens": 38626,
+        "usedPercent": 85.05185758513932
+      },
+      "usageRequests": 82,
+      "totalTokens": 11921904,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297701063,
+          "ageMs": 27296,
+          "lastCheckedAt": 1789297728359,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1886,
+          "accepted": 1886,
+          "processed": 1886,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1646,
+          "rawInvalid": 0,
+          "rawUnknown": 782
+        },
+        "渲染": {
+          "count": 1705,
+          "errors": 0,
+          "lastRenderAt": 1789297728127
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 359,
+            "lastMs": 67.63616700004786,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.16149605292443
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1886,
+            "lastMs": 0.005917000002227724,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.0050218621418374595
+          },
+          "reducer": {
+            "count": 1886,
+            "lastMs": 0.000750000006519258,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005612724814578062
+          },
+          "reducerToRender": {
+            "count": 32,
+            "lastMs": 5.228917000000365,
+            "maxMs": 142.6626249999972,
+            "meanMs": 17.5714073750063
+          },
+          "render": {
+            "count": 1705,
+            "lastMs": 2.1782090000342578,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.4518668146600926
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 24379144,
+          "rss": 127762432,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 82,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 657,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 115511,
+      "writes": 1039,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1080129.111,
+      "cpuMs": 14724.998,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 11921904,
+        "stateTotal": 11921904
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9553421,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 219774,
+        "contextWindow": 258400,
+        "remainingTokens": 38626,
+        "usedPercent": 85.05185758513932
+      },
+      "usageRequests": 82,
+      "totalTokens": 11921904,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297769773,
+          "ageMs": 17759,
+          "lastCheckedAt": 1789297787532,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1888,
+          "accepted": 1888,
+          "processed": 1888,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1648,
+          "rawInvalid": 0,
+          "rawUnknown": 784
+        },
+        "渲染": {
+          "count": 1803,
+          "errors": 0,
+          "lastRenderAt": 1789297787119
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 379,
+            "lastMs": 67.16195800015703,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.27004342216325
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1888,
+            "lastMs": 0.006458000047132373,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005031681673562867
+          },
+          "reducer": {
+            "count": 1888,
+            "lastMs": 0.0010000001639127731,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005609118644402891
+          },
+          "reducerToRender": {
+            "count": 33,
+            "lastMs": 6.52495800005272,
+            "maxMs": 142.6626249999972,
+            "meanMs": 17.23666648485619
+          },
+          "render": {
+            "count": 1803,
+            "lastMs": 4.10141700017266,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.4462363438687493
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 22948496,
+          "rss": 134152192,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 82,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 657,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 121696,
+      "writes": 1098,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1140319.7924580001,
+      "cpuMs": 15521.77,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12145653,
+        "stateTotal": 12145653
+      },
+      "rawBytesThisRefresh": 24495,
+      "rawOffset": 9592270,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 223749,
+        "contextWindow": 258400,
+        "remainingTokens": 34651,
+        "usedPercent": 86.59017027863777
+      },
+      "usageRequests": 83,
+      "totalTokens": 12145653,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297846704,
+          "ageMs": 1020,
+          "lastCheckedAt": 1789297847724,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1902,
+          "accepted": 1902,
+          "processed": 1902,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1661,
+          "rawInvalid": 0,
+          "rawUnknown": 791
+        },
+        "渲染": {
+          "count": 1904,
+          "errors": 0,
+          "lastRenderAt": 1789297847221
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 400,
+            "lastMs": 68.08679200010374,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.39562520999864
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1902,
+            "lastMs": 0.006917000049725175,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005078395372700335
+          },
+          "reducer": {
+            "count": 1902,
+            "lastMs": 0.018124999944120646,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005655262355557783
+          },
+          "reducerToRender": {
+            "count": 35,
+            "lastMs": 7.961957999970764,
+            "maxMs": 142.6626249999972,
+            "meanMs": 16.600348628578764
+          },
+          "render": {
+            "count": 1904,
+            "lastMs": 3.4947079999838024,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.4413960304604063
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 19705832,
+          "rss": 106430464,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 83,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 662,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 128552,
+      "writes": 1158,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1200487.617083,
+      "cpuMs": 16320.043,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12145653,
+        "stateTotal": 12145653
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9597460,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 223749,
+        "contextWindow": 258400,
+        "remainingTokens": 34651,
+        "usedPercent": 86.59017027863777
+      },
+      "usageRequests": 83,
+      "totalTokens": 12145653,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297904738,
+          "ageMs": 3160,
+          "lastCheckedAt": 1789297907898,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1904,
+          "accepted": 1904,
+          "processed": 1904,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1663,
+          "rawInvalid": 0,
+          "rawUnknown": 793
+        },
+        "渲染": {
+          "count": 2006,
+          "errors": 0,
+          "lastRenderAt": 1789297907858
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 422,
+            "lastMs": 39.0185829999391,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.16735812085146
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1904,
+            "lastMs": 0.004915999947115779,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005083258402768688
+          },
+          "reducer": {
+            "count": 1904,
+            "lastMs": 0.0006250001024454832,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005650919117844718
+          },
+          "reducerToRender": {
+            "count": 37,
+            "lastMs": 5.624416999984533,
+            "maxMs": 142.6626249999972,
+            "meanMs": 16.02233881081762
+          },
+          "render": {
+            "count": 2006,
+            "lastMs": 0.7806249998975545,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.4334742642061635
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 20609104,
+          "rss": 114393088,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 83,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 662,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 4
+      },
+      "bytesWritten": 134842,
+      "writes": 1218,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1260670.7077920001,
+      "cpuMs": 17105.948,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12145653,
+        "stateTotal": 12145653
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9602791,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 223749,
+        "contextWindow": 258400,
+        "remainingTokens": 34651,
+        "usedPercent": 86.59017027863777
+      },
+      "usageRequests": 83,
+      "totalTokens": 12145653,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789297931637,
+          "ageMs": 36422,
+          "lastCheckedAt": 1789297968059,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1908,
+          "accepted": 1908,
+          "processed": 1908,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1667,
+          "rawInvalid": 0,
+          "rawUnknown": 797
+        },
+        "渲染": {
+          "count": 2107,
+          "errors": 0,
+          "lastRenderAt": 1789297967878
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 443,
+            "lastMs": 52.71062499983236,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.05015876974946
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1908,
+            "lastMs": 0.005917000118643045,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005109638364439945
+          },
+          "reducer": {
+            "count": 1908,
+            "lastMs": 0.0006659999489784241,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.0056449030398870005
+          },
+          "reducerToRender": {
+            "count": 39,
+            "lastMs": 5.443667000159621,
+            "maxMs": 142.6626249999972,
+            "meanMs": 15.476926128219098
+          },
+          "render": {
+            "count": 2107,
+            "lastMs": 0.7595420000143349,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.4274258618874907
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 30140080,
+          "rss": 116604928,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 83,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 662,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 141237,
+      "writes": 1279,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1320838.359625,
+      "cpuMs": 17924.633,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12373789,
+        "stateTotal": 12373789
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9619748,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 228136,
+        "contextWindow": 258400,
+        "remainingTokens": 30264,
+        "usedPercent": 88.28792569659443
+      },
+      "usageRequests": 84,
+      "totalTokens": 12373789,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789298013330,
+          "ageMs": 14909,
+          "lastCheckedAt": 1789298028239,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1914,
+          "accepted": 1914,
+          "processed": 1914,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1672,
+          "rawInvalid": 0,
+          "rawUnknown": 798
+        },
+        "渲染": {
+          "count": 2209,
+          "errors": 0,
+          "lastRenderAt": 1789298028173
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 464,
+            "lastMs": 65.22324999980628,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.0344727909461
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1914,
+            "lastMs": 0.0059999998193234205,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.0051318479619041225
+          },
+          "reducer": {
+            "count": 1914,
+            "lastMs": 0.005332999862730503,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005678540229964017
+          },
+          "reducerToRender": {
+            "count": 40,
+            "lastMs": 4.262624999973923,
+            "maxMs": 142.6626249999972,
+            "meanMs": 15.19656860001297
+          },
+          "render": {
+            "count": 2209,
+            "lastMs": 2.3987920000217855,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.4300160679028786
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 28276416,
+          "rss": 115867648,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 84,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 665,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 4
+      },
+      "bytesWritten": 148182,
+      "writes": 1340,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1380014.526083,
+      "cpuMs": 18730.339,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12602890,
+        "stateTotal": 12602890
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9631166,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 229101,
+        "contextWindow": 258400,
+        "remainingTokens": 29299,
+        "usedPercent": 88.66137770897834
+      },
+      "usageRequests": 85,
+      "totalTokens": 12602890,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789298083645,
+          "ageMs": 3774,
+          "lastCheckedAt": 1789298087419,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1923,
+          "accepted": 1923,
+          "processed": 1923,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1680,
+          "rawInvalid": 0,
+          "rawUnknown": 803
+        },
+        "渲染": {
+          "count": 2307,
+          "errors": 0,
+          "lastRenderAt": 1789298086618
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 484,
+            "lastMs": 68.74945899983868,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.09572821900616
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1923,
+            "lastMs": 0.005624999990686774,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.00517883515323302
+          },
+          "reducer": {
+            "count": 1923,
+            "lastMs": 0.0006250001024454832,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005699523661030165
+          },
+          "reducerToRender": {
+            "count": 43,
+            "lastMs": 5.633417000062764,
+            "maxMs": 142.6626249999972,
+            "meanMs": 14.524052186062562
+          },
+          "render": {
+            "count": 2307,
+            "lastMs": 3.3532500001601875,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.4334588742942533
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 27070576,
+          "rss": 116572160,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 85,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 667,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 154889,
+      "writes": 1402,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1440195.703375,
+      "cpuMs": 19498.96,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12832548,
+        "stateTotal": 12832548
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9642827,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 229658,
+        "contextWindow": 258400,
+        "remainingTokens": 28742,
+        "usedPercent": 88.87693498452013
+      },
+      "usageRequests": 86,
+      "totalTokens": 12832548,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789298138629,
+          "ageMs": 8971,
+          "lastCheckedAt": 1789298147600,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1932,
+          "accepted": 1932,
+          "processed": 1932,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1687,
+          "rawInvalid": 0,
+          "rawUnknown": 805
+        },
+        "渲染": {
+          "count": 2408,
+          "errors": 0,
+          "lastRenderAt": 1789298146720
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 505,
+            "lastMs": 68.29029199993238,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.2161408455429
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1932,
+            "lastMs": 0.017167000100016594,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005267955486527783
+          },
+          "reducer": {
+            "count": 1932,
+            "lastMs": 0.0029999997932463884,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.005806168737125438
+          },
+          "reducerToRender": {
+            "count": 47,
+            "lastMs": 5.895167000126094,
+            "maxMs": 142.6626249999972,
+            "meanMs": 13.7566505744808
+          },
+          "render": {
+            "count": 2408,
+            "lastMs": 2.9415410000365227,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.432116227573987
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 25650816,
+          "rss": 115310592,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 86,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 670,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 161834,
+      "writes": 1465,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1500386.724875,
+      "cpuMs": 20306.111,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12832548,
+        "stateTotal": 12832548
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9652291,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 229658,
+        "contextWindow": 258400,
+        "remainingTokens": 28742,
+        "usedPercent": 88.87693498452013
+      },
+      "usageRequests": 86,
+      "totalTokens": 12832548,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789298191854,
+          "ageMs": 15924,
+          "lastCheckedAt": 1789298207778,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1934,
+          "accepted": 1934,
+          "processed": 1934,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1689,
+          "rawInvalid": 0,
+          "rawUnknown": 807
+        },
+        "渲染": {
+          "count": 2509,
+          "errors": 0,
+          "lastRenderAt": 1789298206833
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 526,
+            "lastMs": 55.98158299992792,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.20540905893316
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1934,
+            "lastMs": 0.016250000102445483,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005281013960749822
+          },
+          "reducer": {
+            "count": 1934,
+            "lastMs": 0.0025420000310987234,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.00580346070332987
+          },
+          "reducerToRender": {
+            "count": 49,
+            "lastMs": 5.46979200001806,
+            "maxMs": 142.6626249999972,
+            "meanMs": 13.423879979601436
+          },
+          "render": {
+            "count": 2509,
+            "lastMs": 2.828207999933511,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.4343936827413866
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 24256256,
+          "rss": 112279552,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 86,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 670,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 168229,
+      "writes": 1526,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1560555.010667,
+      "cpuMs": 21106.126,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12832548,
+        "stateTotal": 12832548
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9652291,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 229658,
+        "contextWindow": 258400,
+        "remainingTokens": 28742,
+        "usedPercent": 88.87693498452013
+      },
+      "usageRequests": 86,
+      "totalTokens": 12832548,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789298191854,
+          "ageMs": 76100,
+          "lastCheckedAt": 1789298267954,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1934,
+          "accepted": 1934,
+          "processed": 1934,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1689,
+          "rawInvalid": 0,
+          "rawUnknown": 807
+        },
+        "渲染": {
+          "count": 2611,
+          "errors": 0,
+          "lastRenderAt": 1789298267933
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 547,
+            "lastMs": 63.144290999975055,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.20535877513291
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1934,
+            "lastMs": 0.016250000102445483,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005281013960749822
+          },
+          "reducer": {
+            "count": 1934,
+            "lastMs": 0.0025420000310987234,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.00580346070332987
+          },
+          "reducerToRender": {
+            "count": 49,
+            "lastMs": 5.46979200001806,
+            "maxMs": 142.6626249999972,
+            "meanMs": 13.423879979601436
+          },
+          "render": {
+            "count": 2611,
+            "lastMs": 1.1822500000707805,
+            "maxMs": 6.589250000019092,
+            "meanMs": 2.437911242435033
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 22681136,
+          "rss": 112918528,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 86,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 670,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 4
+      },
+      "bytesWritten": 174519,
+      "writes": 1586,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1783406.811042,
+      "cpuMs": 21513.289,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12832548,
+        "stateTotal": 12832548
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9652291,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 229658,
+        "contextWindow": 258400,
+        "remainingTokens": 28742,
+        "usedPercent": 88.87693498452013
+      },
+      "usageRequests": 86,
+      "totalTokens": 12832548,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789298191854,
+          "ageMs": 299052,
+          "lastCheckedAt": 1789298490906,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1934,
+          "accepted": 1934,
+          "processed": 1934,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1689,
+          "rawInvalid": 0,
+          "rawUnknown": 807
+        },
+        "渲染": {
+          "count": 2650,
+          "errors": 0,
+          "lastRenderAt": 1789298490745
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 556,
+            "lastMs": 161.4468750001397,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.47854084172283
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1934,
+            "lastMs": 0.016250000102445483,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005281013960749822
+          },
+          "reducer": {
+            "count": 1934,
+            "lastMs": 0.0025420000310987234,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.00580346070332987
+          },
+          "reducerToRender": {
+            "count": 49,
+            "lastMs": 5.46979200001806,
+            "maxMs": 142.6626249999972,
+            "meanMs": 13.423879979601436
+          },
+          "render": {
+            "count": 2650,
+            "lastMs": 2.000541999936104,
+            "maxMs": 12.922874999931082,
+            "meanMs": 2.4402419199993806
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 25409176,
+          "rss": 86016000,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 86,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 670,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "FSReqPromise": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 176934,
+      "writes": 1609,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1784582.007625,
+      "cpuMs": 21586.421,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12832548,
+        "stateTotal": 12832548
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9652291,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 229658,
+        "contextWindow": 258400,
+        "remainingTokens": 28742,
+        "usedPercent": 88.87693498452013
+      },
+      "usageRequests": 86,
+      "totalTokens": 12832548,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789298191854,
+          "ageMs": 300130,
+          "lastCheckedAt": 1789298491984,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1934,
+          "accepted": 1934,
+          "processed": 1934,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1689,
+          "rawInvalid": 0,
+          "rawUnknown": 807
+        },
+        "渲染": {
+          "count": 2653,
+          "errors": 0,
+          "lastRenderAt": 1789298491749
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 558,
+            "lastMs": 66.46520900004543,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.47706011110725
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1934,
+            "lastMs": 0.016250000102445483,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005281013960749822
+          },
+          "reducer": {
+            "count": 1934,
+            "lastMs": 0.0025420000310987234,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.00580346070332987
+          },
+          "reducerToRender": {
+            "count": 49,
+            "lastMs": 5.46979200001806,
+            "maxMs": 142.6626249999972,
+            "meanMs": 13.423879979601436
+          },
+          "render": {
+            "count": 2653,
+            "lastMs": 9.552666999865323,
+            "maxMs": 12.922874999931082,
+            "meanMs": 2.4419194952877055
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 23526416,
+          "rss": 103333888,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 86,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 670,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 177039,
+      "writes": 1610,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1785660.2238750001,
+      "cpuMs": 21618.387,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12832548,
+        "stateTotal": 12832548
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9652291,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 229658,
+        "contextWindow": 258400,
+        "remainingTokens": 28742,
+        "usedPercent": 88.87693498452013
+      },
+      "usageRequests": 86,
+      "totalTokens": 12832548,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789298191854,
+          "ageMs": 301225,
+          "lastCheckedAt": 1789298493079,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1934,
+          "accepted": 1934,
+          "processed": 1934,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1689,
+          "rawInvalid": 0,
+          "rawUnknown": 807
+        },
+        "渲染": {
+          "count": 2655,
+          "errors": 0,
+          "lastRenderAt": 1789298492743
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 559,
+            "lastMs": 83.24325000005774,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.50526438640055
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1934,
+            "lastMs": 0.016250000102445483,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005281013960749822
+          },
+          "reducer": {
+            "count": 1934,
+            "lastMs": 0.0025420000310987234,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.00580346070332987
+          },
+          "reducerToRender": {
+            "count": 49,
+            "lastMs": 5.46979200001806,
+            "maxMs": 142.6626249999972,
+            "meanMs": 13.423879979601436
+          },
+          "render": {
+            "count": 2655,
+            "lastMs": 2.8345830000471324,
+            "maxMs": 12.922874999931082,
+            "meanMs": 2.4414801804136435
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 31497688,
+          "rss": 107544576,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 86,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 670,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 177144,
+      "writes": 1611,
+      "errors": []
+    },
+    {
+      "elapsedMs": 1800001.272917,
+      "cpuMs": 21812.481,
+      "rootMatches": true,
+      "tokenInvariant": true,
+      "parity": {
+        "checked": true,
+        "equal": true,
+        "rawTotal": 12832548,
+        "stateTotal": 12832548
+      },
+      "rawBytesThisRefresh": 0,
+      "rawOffset": 9652291,
+      "model": "gpt-6-astra",
+      "context": {
+        "usedTokens": 229658,
+        "contextWindow": 258400,
+        "remainingTokens": 28742,
+        "usedPercent": 88.87693498452013
+      },
+      "usageRequests": 86,
+      "totalTokens": 12832548,
+      "activity": "completed",
+      "toolActive": 0,
+      "toolRecent": 20,
+      "agentCount": 6,
+      "childCount": 5,
+      "mcpCount": 0,
+      "skillCount": 15,
+      "runtime": {
+        "authority": "fallback-rollout",
+        "discovery": "error",
+        "candidates": 0,
+        "ownership": "unknown"
+      },
+      "diagnostics": {
+        "运行时": {
+          "authority": "fallback-rollout",
+          "connection": "disconnected",
+          "ownership": "unknown"
+        },
+        "来源": {
+          "kind": "rollout",
+          "state": "fallback",
+          "lastEventAt": 1789298191854,
+          "ageMs": 315551,
+          "lastCheckedAt": 1789298507405,
+          "staleThresholdMs": 60000
+        },
+        "会话": {
+          "session": "01a09a06",
+          "thread": "01a09a06",
+          "switches": 0
+        },
+        "事件": {
+          "received": 1934,
+          "accepted": 1934,
+          "processed": 1934,
+          "deduplicated": 0,
+          "outOfOrder": 0,
+          "dropped": 0,
+          "invalid": 0,
+          "unknown": 0,
+          "errors": 0,
+          "rawReceived": 1689,
+          "rawInvalid": 0,
+          "rawUnknown": 807
+        },
+        "渲染": {
+          "count": 2675,
+          "errors": 0,
+          "lastRenderAt": 1789298506753
+        },
+        "恢复": {
+          "state": "fallback",
+          "reconnects": 7,
+          "fallbacks": 1,
+          "recoveries": 0
+        },
+        "性能毫秒": {
+          "startup": {
+            "count": 1,
+            "lastMs": 199.47720900000002,
+            "maxMs": 199.47720900000002,
+            "meanMs": 199.47720900000002
+          },
+          "discovery": {
+            "count": 565,
+            "lastMs": 66.63845800003037,
+            "maxMs": 206.67337500001304,
+            "meanMs": 67.66256143008479
+          },
+          "firstEvent": {
+            "count": 1,
+            "lastMs": 43.01816699999995,
+            "maxMs": 43.01816699999995,
+            "meanMs": 43.01816699999995
+          },
+          "firstRender": {
+            "count": 1,
+            "lastMs": 3.335374999999999,
+            "maxMs": 3.335374999999999,
+            "meanMs": 3.335374999999999
+          },
+          "eventToReducer": {
+            "count": 1934,
+            "lastMs": 0.016250000102445483,
+            "maxMs": 0.21591699999999037,
+            "meanMs": 0.005281013960749822
+          },
+          "reducer": {
+            "count": 1934,
+            "lastMs": 0.0025420000310987234,
+            "maxMs": 0.28920800000003055,
+            "meanMs": 0.00580346070332987
+          },
+          "reducerToRender": {
+            "count": 49,
+            "lastMs": 5.46979200001806,
+            "maxMs": 142.6626249999972,
+            "meanMs": 13.423879979601436
+          },
+          "render": {
+            "count": 2675,
+            "lastMs": 2.321916999993846,
+            "maxMs": 12.922874999931082,
+            "meanMs": 2.4450445506532694
+          }
+        },
+        "内存与资源": {
+          "heapUsed": 14112272,
+          "rss": 114950144,
+          "toolCount": 20,
+          "agentCount": 6,
+          "historySize": 86,
+          "retainedTurns": 1,
+          "turnHistoryLimited": 0,
+          "dedupEntries": 670,
+          "sourceThreads": 6,
+          "sourceWatermarks": 84,
+          "watermarkIdentities": 84,
+          "tokenPending": 0,
+          "agentReaders": 5,
+          "retiredAgentFiles": 0,
+          "agentDiagnosticEntries": 0,
+          "stateSubscribers": 1,
+          "pendingStateNotifications": 0,
+          "appConnections": 0,
+          "appEventListeners": 1,
+          "appStatusListeners": 1,
+          "appDiagnosticListeners": 1,
+          "appThreads": 6,
+          "appBufferedEvents": 0,
+          "appBufferedBytes": 0,
+          "reconnectTimers": 0,
+          "pendingRequests": 0,
+          "pendingWrites": 0,
+          "activeWatchers": 0,
+          "providerTimers": 1,
+          "rolloutPollTimers": 1,
+          "runtimeClients": 0,
+          "runtimePendingClients": 0,
+          "failedCleanupClients": 0,
+          "pendingApprovals": 0,
+          "trackedAgents": 6,
+          "retiredAgents": 0,
+          "retiredAgentTurns": 0,
+          "uncertainTurns": 0
+        },
+        "告警": [
+          {
+            "code": "watch-unavailable",
+            "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+            "count": 1,
+            "lastAt": 1789296707316
+          }
+        ]
+      },
+      "activeResources": {
+        "CloseReq": 1,
+        "Timeout": 3
+      },
+      "bytesWritten": 178730,
+      "writes": 1626,
+      "errors": []
+    }
+  ],
+  "interruptions": [],
+  "startedAt": "2026-09-13T10:51:47.315Z",
+  "violations": [],
+  "durationMs": 1800078.050583,
+  "completedRequestedDuration": true,
+  "finishedAt": "2026-09-13T11:21:47.433Z",
+  "afterStop": {
+    "运行时": {
+      "connection": "stopped"
+    },
+    "来源": {
+      "kind": "none",
+      "state": "disconnected",
+      "lastEventAt": 1789298191854,
+      "ageMs": 315579,
+      "staleThresholdMs": 60000
+    },
+    "会话": {
+      "session": "01a09a06",
+      "thread": "01a09a06",
+      "switches": 0
+    },
+    "事件": {
+      "received": 1934,
+      "accepted": 1934,
+      "processed": 1934,
+      "deduplicated": 0,
+      "outOfOrder": 0,
+      "dropped": 0,
+      "invalid": 0,
+      "unknown": 0,
+      "errors": 0,
+      "rawReceived": 1689,
+      "rawInvalid": 0,
+      "rawUnknown": 807
+    },
+    "渲染": {
+      "count": 2676,
+      "errors": 0,
+      "lastRenderAt": 1789298507408
+    },
+    "恢复": {
+      "state": "disconnected",
+      "reconnects": 7,
+      "fallbacks": 1,
+      "recoveries": 0
+    },
+    "性能毫秒": {
+      "startup": {
+        "count": 1,
+        "lastMs": 199.47720900000002,
+        "maxMs": 199.47720900000002,
+        "meanMs": 199.47720900000002
+      },
+      "discovery": {
+        "count": 565,
+        "lastMs": 66.63845800003037,
+        "maxMs": 206.67337500001304,
+        "meanMs": 67.66256143008479
+      },
+      "firstEvent": {
+        "count": 1,
+        "lastMs": 43.01816699999995,
+        "maxMs": 43.01816699999995,
+        "meanMs": 43.01816699999995
+      },
+      "firstRender": {
+        "count": 1,
+        "lastMs": 3.335374999999999,
+        "maxMs": 3.335374999999999,
+        "meanMs": 3.335374999999999
+      },
+      "eventToReducer": {
+        "count": 1934,
+        "lastMs": 0.016250000102445483,
+        "maxMs": 0.21591699999999037,
+        "meanMs": 0.005281013960749822
+      },
+      "reducer": {
+        "count": 1934,
+        "lastMs": 0.0025420000310987234,
+        "maxMs": 0.28920800000003055,
+        "meanMs": 0.00580346070332987
+      },
+      "reducerToRender": {
+        "count": 49,
+        "lastMs": 5.46979200001806,
+        "maxMs": 142.6626249999972,
+        "meanMs": 13.423879979601436
+      },
+      "render": {
+        "count": 2676,
+        "lastMs": 0.7852910000365227,
+        "maxMs": 12.922874999931082,
+        "meanMs": 2.444424313900423
+      },
+      "shutdown": {
+        "count": 2,
+        "lastMs": 0.4364579999819398,
+        "maxMs": 0.4364579999819398,
+        "meanMs": 0.29922899999655783
+      }
+    },
+    "内存与资源": {
+      "heapUsed": 12232928,
+      "rss": 115113984,
+      "toolCount": 20,
+      "agentCount": 6,
+      "historySize": 86,
+      "retainedTurns": 1,
+      "turnHistoryLimited": 0,
+      "dedupEntries": 670,
+      "sourceThreads": 6,
+      "sourceWatermarks": 84,
+      "watermarkIdentities": 84,
+      "tokenPending": 0,
+      "agentReaders": 5,
+      "retiredAgentFiles": 0,
+      "agentDiagnosticEntries": 0,
+      "stateSubscribers": 0,
+      "pendingStateNotifications": 0,
+      "appConnections": 0,
+      "appEventListeners": 0,
+      "appStatusListeners": 0,
+      "appDiagnosticListeners": 0,
+      "appThreads": 0,
+      "appBufferedEvents": 0,
+      "appBufferedBytes": 0,
+      "reconnectTimers": 0,
+      "pendingRequests": 0,
+      "pendingWrites": 0,
+      "activeWatchers": 0,
+      "providerTimers": 0,
+      "rolloutPollTimers": 0,
+      "runtimeClients": 0,
+      "runtimePendingClients": 0,
+      "failedCleanupClients": 0,
+      "pendingApprovals": 0,
+      "trackedAgents": 6,
+      "retiredAgents": 0,
+      "retiredAgentTurns": 0,
+      "uncertainTurns": 0
+    },
+    "告警": [
+      {
+        "code": "watch-unavailable",
+        "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+        "count": 1,
+        "lastAt": 1789296707316
+      }
+    ]
+  },
+  "resourcesAfterStop": {},
+  "outputListenersAfterStop": []
+}

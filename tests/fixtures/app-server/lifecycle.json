@@ -1,0 +1,315 @@
+{
+  "initialize": {
+    "userAgent": "codex-cli/0.154.0",
+    "codexHome": "/example/.codex",
+    "platformFamily": "unix",
+    "platformOs": "macos"
+  },
+  "threadStart": {
+    "thread": {
+      "id": "thread-a",
+      "parentThreadId": null,
+      "sessionId": "session-tree",
+      "environments": null,
+      "extra": null,
+      "forkedFromId": null,
+      "preview": "合成协议样本",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "legacy",
+      "modelProvider": "openai",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "medium",
+      "createdAt": 1789257600,
+      "updatedAt": 1789257601,
+      "recencyAt": null,
+      "status": {
+        "type": "idle"
+      },
+      "path": null,
+      "cwd": "/example",
+      "cliVersion": "0.154.0",
+      "originator": null,
+      "source": "cli",
+      "canAcceptDirectInput": null,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+    },
+    "model": "gpt-6-astra",
+    "modelProvider": "openai",
+    "serviceTier": null,
+    "cwd": "/example",
+    "runtimeWorkspaceRoots": [
+      "/example"
+    ],
+    "instructionSources": [],
+    "approvalPolicy": "never",
+    "approvalsReviewer": "user",
+    "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+    },
+    "activePermissionProfile": null,
+    "reasoningEffort": "medium",
+    "multiAgentMode": "explicitRequestOnly"
+  },
+  "threadRead": {
+    "thread": {
+      "id": "thread-a",
+      "parentThreadId": null,
+      "sessionId": "session-tree",
+      "environments": null,
+      "extra": null,
+      "forkedFromId": null,
+      "preview": "合成协议样本",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "legacy",
+      "modelProvider": "openai",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "medium",
+      "createdAt": 1789257600,
+      "updatedAt": 1789257601,
+      "recencyAt": null,
+      "status": {
+        "type": "idle"
+      },
+      "path": null,
+      "cwd": "/example",
+      "cliVersion": "0.154.0",
+      "originator": null,
+      "source": "cli",
+      "canAcceptDirectInput": null,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+    }
+  },
+  "threadResume": {
+    "thread": {
+      "id": "thread-a",
+      "parentThreadId": null,
+      "sessionId": "session-tree",
+      "environments": null,
+      "extra": null,
+      "forkedFromId": null,
+      "preview": "合成协议样本",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "legacy",
+      "modelProvider": "openai",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "medium",
+      "createdAt": 1789257600,
+      "updatedAt": 1789257601,
+      "recencyAt": null,
+      "status": {
+        "type": "idle"
+      },
+      "path": null,
+      "cwd": "/example",
+      "cliVersion": "0.154.0",
+      "originator": null,
+      "source": "cli",
+      "canAcceptDirectInput": null,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+    },
+    "model": "gpt-6-astra",
+    "modelProvider": "openai",
+    "serviceTier": null,
+    "cwd": "/example",
+    "runtimeWorkspaceRoots": [
+      "/example"
+    ],
+    "instructionSources": [],
+    "approvalPolicy": "never",
+    "approvalsReviewer": "user",
+    "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+    },
+    "activePermissionProfile": null,
+    "reasoningEffort": "medium",
+    "multiAgentMode": "explicitRequestOnly",
+    "initialTurnsPage": null,
+    "turnsBackwardsCursor": null,
+    "itemsBackwardsCursor": null
+  },
+  "turnStart": {
+    "turn": {
+      "id": "turn-a",
+      "status": "inProgress",
+      "items": [],
+      "itemsView": "full",
+      "error": null,
+      "startedAt": 1789257600,
+      "completedAt": null,
+      "durationMs": null
+    }
+  },
+  "notifications": [
+    {
+      "method": "thread/started",
+      "params": {
+        "thread": {
+          "id": "thread-a",
+          "parentThreadId": null,
+          "sessionId": "session-tree",
+          "environments": null,
+          "extra": null,
+          "forkedFromId": null,
+          "preview": "合成协议样本",
+          "ephemeral": false,
+          "section": null,
+          "sectionEnteredAt": null,
+          "projectId": null,
+          "historyMode": "legacy",
+          "modelProvider": "openai",
+          "model": "gpt-6-astra",
+          "reasoningEffort": "medium",
+          "createdAt": 1789257600,
+          "updatedAt": 1789257601,
+          "recencyAt": null,
+          "status": {
+            "type": "idle"
+          },
+          "path": null,
+          "cwd": "/example",
+          "cliVersion": "0.154.0",
+          "originator": null,
+          "source": "cli",
+          "canAcceptDirectInput": null,
+          "threadSource": null,
+          "agentNickname": null,
+          "agentRole": null,
+          "gitInfo": null,
+          "name": null,
+          "daybreakEnabled": null,
+          "turns": []
+        }
+      }
+    },
+    {
+      "method": "turn/started",
+      "params": {
+        "threadId": "thread-a",
+        "turn": {
+          "id": "turn-a",
+          "status": "inProgress",
+          "items": [],
+          "itemsView": "full",
+          "error": null,
+          "startedAt": 1789257600,
+          "completedAt": null,
+          "durationMs": null
+        }
+      }
+    },
+    {
+      "method": "turn/completed",
+      "params": {
+        "threadId": "thread-a",
+        "turn": {
+          "id": "turn-a",
+          "status": "completed",
+          "items": [],
+          "itemsView": "full",
+          "error": null,
+          "startedAt": 1789257600,
+          "completedAt": 1789257601,
+          "durationMs": 1000
+        }
+      }
+    },
+    {
+      "method": "error",
+      "params": {
+        "threadId": "thread-a",
+        "turnId": "turn-a",
+        "willRetry": false,
+        "error": {
+          "message": "合成错误",
+          "codexErrorInfo": "internalServerError",
+          "additionalDetails": null,
+          "misalignment": null
+        }
+      }
+    }
+  ],
+  "malformed": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+      "threadId": "thread-a",
+      "tokenUsage": {
+        "total": {
+          "totalTokens": -1
+        }
+      }
+    }
+  },
+  "reconnect": {
+    "before": {
+      "data": [
+        {
+          "id": "turn-a",
+          "status": "completed",
+          "items": [],
+          "itemsView": "full",
+          "error": null,
+          "startedAt": 1789257600,
+          "completedAt": 1789257601,
+          "durationMs": 1000
+        }
+      ],
+      "nextCursor": null,
+      "backwardsCursor": null
+    },
+    "after": {
+      "data": [
+        {
+          "id": "turn-a",
+          "status": "completed",
+          "items": [],
+          "itemsView": "full",
+          "error": null,
+          "startedAt": 1789257600,
+          "completedAt": 1789257601,
+          "durationMs": 1000
+        },
+        {
+          "id": "turn-b",
+          "status": "completed",
+          "items": [],
+          "itemsView": "full",
+          "error": null,
+          "startedAt": 1789257600,
+          "completedAt": 1789257601,
+          "durationMs": 1000
+        }
+      ],
+      "nextCursor": null,
+      "backwardsCursor": null
+    }
+  }
+}

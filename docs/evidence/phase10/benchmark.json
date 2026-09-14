@@ -1,0 +1,335 @@
+{
+  "evidence": "合成回放与本地测试协议进程；不是实际 Codex Runtime 验收",
+  "node": "v23.11.0",
+  "os": "darwin",
+  "arch": "arm64",
+  "requests": 10000,
+  "startupWallMs": 45.63816700000001,
+  "stableRolloutBytes": 0,
+  "reconnectWallMs": 38.93079200000001,
+  "pipeline": {
+    "运行时": {
+      "connection": "stopped"
+    },
+    "来源": {
+      "kind": "none",
+      "state": "disconnected",
+      "staleThresholdMs": 60000
+    },
+    "会话": {
+      "session": "thread-a",
+      "thread": "thread-a",
+      "switches": 0
+    },
+    "事件": {
+      "received": 18,
+      "accepted": 12,
+      "processed": 12,
+      "deduplicated": 6,
+      "outOfOrder": 0,
+      "dropped": 0,
+      "invalid": 0,
+      "unknown": 0,
+      "errors": 0,
+      "rawReceived": 3,
+      "rawInvalid": 0,
+      "rawUnknown": 0
+    },
+    "渲染": {
+      "count": 2,
+      "errors": 0,
+      "lastRenderAt": 1789296706516
+    },
+    "恢复": {
+      "state": "disconnected",
+      "reconnects": 1,
+      "fallbacks": 1,
+      "recoveries": 2,
+      "lastReconnectDurationMs": 27.110917
+    },
+    "性能毫秒": {
+      "startup": {
+        "count": 1,
+        "lastMs": 45.98950000000001,
+        "maxMs": 45.98950000000001,
+        "meanMs": 45.98950000000001
+      },
+      "discovery": {
+        "count": 2,
+        "lastMs": 0.3496669999999966,
+        "maxMs": 1.3576659999999947,
+        "meanMs": 0.8536664999999957
+      },
+      "attach": {
+        "count": 1,
+        "lastMs": 30.546750000000003,
+        "maxMs": 30.546750000000003,
+        "meanMs": 30.546750000000003
+      },
+      "firstEvent": {
+        "count": 1,
+        "lastMs": 12.786042000000009,
+        "maxMs": 12.786042000000009,
+        "meanMs": 12.786042000000009
+      },
+      "firstRender": {
+        "count": 1,
+        "lastMs": 9.455667000000005,
+        "maxMs": 9.455667000000005,
+        "meanMs": 9.455667000000005
+      },
+      "eventToReducer": {
+        "count": 18,
+        "lastMs": 0.006458999999978232,
+        "maxMs": 0.3132499999999965,
+        "meanMs": 0.05038433333333043
+      },
+      "reducer": {
+        "count": 12,
+        "lastMs": 0.0027499999999918145,
+        "maxMs": 0.27670899999999676,
+        "meanMs": 0.043677416666662104
+      },
+      "reducerToRender": {
+        "count": 1,
+        "lastMs": 6.294166000000004,
+        "maxMs": 6.294166000000004,
+        "meanMs": 6.294166000000004
+      },
+      "render": {
+        "count": 2,
+        "lastMs": 3.7242080000000044,
+        "maxMs": 3.7242080000000044,
+        "meanMs": 3.4586664999999996
+      },
+      "reconnect": {
+        "count": 1,
+        "lastMs": 27.110917,
+        "maxMs": 27.110917,
+        "meanMs": 27.110917
+      },
+      "shutdown": {
+        "count": 2,
+        "lastMs": 2.345916999999986,
+        "maxMs": 2.345916999999986,
+        "meanMs": 2.235437999999988
+      }
+    },
+    "内存与资源": {
+      "heapUsed": 11672168,
+      "rss": 61587456,
+      "toolCount": 0,
+      "agentCount": 1,
+      "historySize": 1,
+      "retainedTurns": 1,
+      "turnHistoryLimited": 0,
+      "dedupEntries": 3,
+      "sourceThreads": 1,
+      "sourceWatermarks": 10,
+      "watermarkIdentities": 11,
+      "tokenPending": 0,
+      "agentReaders": 0,
+      "retiredAgentFiles": 0,
+      "agentDiagnosticEntries": 0,
+      "stateSubscribers": 0,
+      "pendingStateNotifications": 0,
+      "appConnections": 0,
+      "appEventListeners": 0,
+      "appStatusListeners": 0,
+      "appDiagnosticListeners": 0,
+      "appThreads": 0,
+      "appBufferedEvents": 0,
+      "appBufferedBytes": 0,
+      "reconnectTimers": 0,
+      "pendingRequests": 0,
+      "pendingWrites": 0,
+      "activeWatchers": 0,
+      "providerTimers": 0,
+      "rolloutPollTimers": 0,
+      "runtimeClients": 0,
+      "runtimePendingClients": 0,
+      "failedCleanupClients": 0,
+      "pendingApprovals": 0,
+      "trackedAgents": 1,
+      "retiredAgents": 0,
+      "retiredAgentTurns": 0,
+      "uncertainTurns": 0
+    },
+    "告警": [
+      {
+        "code": "watch-unavailable",
+        "message": "文件监听不可用（EMFILE），继续使用 3000 毫秒增量补查",
+        "count": 1,
+        "lastAt": 1789296706516
+      }
+    ]
+  },
+  "terminal": {
+    "bytes": 541,
+    "frames": 4
+  },
+  "protocolClients": 2,
+  "protocolPendingAfterStop": [
+    0,
+    0
+  ],
+  "replay": {
+    "durationMs": 503.582042,
+    "parseMs": 83.32171800000108,
+    "storeMs": 15.425792999999913,
+    "cpuMs": 821.797,
+    "gcAvailable": true,
+    "heapBefore": 8382136,
+    "heapAfter": 10045168,
+    "rssAfter": 127500288,
+    "heapSamples": [
+      {
+        "requests": 1000,
+        "heapUsed": 9694752
+      },
+      {
+        "requests": 2000,
+        "heapUsed": 9997744
+      },
+      {
+        "requests": 3000,
+        "heapUsed": 10059032
+      },
+      {
+        "requests": 4000,
+        "heapUsed": 10110288
+      },
+      {
+        "requests": 5000,
+        "heapUsed": 10150944
+      },
+      {
+        "requests": 6000,
+        "heapUsed": 10053656
+      },
+      {
+        "requests": 7000,
+        "heapUsed": 10116696
+      },
+      {
+        "requests": 8000,
+        "heapUsed": 10134320
+      },
+      {
+        "requests": 9000,
+        "heapUsed": 10106680
+      },
+      {
+        "requests": 10000,
+        "heapUsed": 10075984
+      }
+    ],
+    "requestsCounted": 10000,
+    "finalTokens": 1100000,
+    "turnsCounted": 10000,
+    "diagnostics": {
+      "运行时": {},
+      "来源": {
+        "kind": "rollout",
+        "state": "stale",
+        "lastEventAt": 1789257610000,
+        "ageMs": 39097089,
+        "lastCheckedAt": 1789296707088,
+        "staleThresholdMs": 60000
+      },
+      "会话": {
+        "switches": 0
+      },
+      "事件": {
+        "received": 60003,
+        "accepted": 60003,
+        "processed": 60003,
+        "deduplicated": 0,
+        "outOfOrder": 0,
+        "dropped": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "errors": 0,
+        "rawReceived": 40002,
+        "rawInvalid": 0,
+        "rawUnknown": 0
+      },
+      "渲染": {
+        "count": 100,
+        "errors": 0,
+        "lastRenderAt": 1789296707084
+      },
+      "恢复": {
+        "state": "stale",
+        "reconnects": 0,
+        "fallbacks": 0,
+        "recoveries": 0
+      },
+      "性能毫秒": {
+        "startup": {
+          "count": 1,
+          "lastMs": 505.990375,
+          "maxMs": 505.990375,
+          "meanMs": 505.990375
+        },
+        "firstEvent": {
+          "count": 1,
+          "lastMs": 0.13458400000001802,
+          "maxMs": 0.13458400000001802,
+          "meanMs": 0.13458400000001802
+        },
+        "firstRender": {
+          "count": 1,
+          "lastMs": 11.114625000000018,
+          "maxMs": 11.114625000000018,
+          "meanMs": 11.114625000000018
+        },
+        "eventToReducer": {
+          "count": 60003,
+          "lastMs": 0.0036670000000640357,
+          "maxMs": 1.2054170000000113,
+          "meanMs": 0.003794494225288671
+        },
+        "reducer": {
+          "count": 60003,
+          "lastMs": 0.002208999999993466,
+          "maxMs": 1.7412500000000364,
+          "meanMs": 0.001121503324833693
+        },
+        "reducerToRender": {
+          "count": 100,
+          "lastMs": 0.40908300000000963,
+          "maxMs": 1.67025000000001,
+          "meanMs": 0.3576541600000016
+        },
+        "render": {
+          "count": 100,
+          "lastMs": 0.23554200000000947,
+          "maxMs": 1.535333000000037,
+          "meanMs": 0.2030216299999998
+        }
+      },
+      "内存与资源": {
+        "heapUsed": 10114088,
+        "rss": 127500288,
+        "toolCount": 0,
+        "agentCount": 1,
+        "historySize": 512,
+        "retainedTurns": 2048,
+        "turnHistoryLimited": 1,
+        "dedupEntries": 2048,
+        "sourceThreads": 1,
+        "sourceWatermarks": 7,
+        "watermarkIdentities": 7,
+        "tokenPending": 0,
+        "stateSubscribers": 0,
+        "pendingStateNotifications": 0,
+        "trackedAgents": 1,
+        "retiredAgents": 0,
+        "retiredAgentTurns": 64,
+        "uncertainTurns": 0
+      },
+      "告警": []
+    }
+  }
+}

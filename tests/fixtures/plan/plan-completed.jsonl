@@ -1,0 +1,2 @@
+{"timestamp":"2026-08-25T06:29:30.590Z","type":"response_item","payload":{"type":"function_call","name":"update_plan","arguments":"{\"plan\":[{\"status\":\"completed\",\"step\":\"检查结构\"},{\"status\":\"completed\",\"step\":\"实现工具函数\"},{\"status\":\"completed\",\"step\":\"补充边界测试\"},{\"status\":\"completed\",\"step\":\"验证结果\"}]}","call_id":"plan-a-6"}}
+{"timestamp":"2026-08-25T06:29:30.601Z","type":"response_item","payload":{"type":"function_call_output","call_id":"plan-a-6","output":"Plan updated"}}

@@ -1,0 +1,5 @@
+[mcp_servers.computer-use]
+command = "example-command"
+args = [ "[已省略]" ]
+cwd = "/fixture/workspace"
+enabled = false

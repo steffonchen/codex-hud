@@ -1,0 +1,15 @@
+{
+  "provenance": "合成有界来源交接回放；不是任何真实 Codex 运行的证据。累计 input=100*n，cache=20*n，output=10*n，reasoning=2*n。",
+  "steps": [
+    { "source": "rollout", "cumulative": 1, "ordinal": 1 },
+    { "live": true },
+    { "source": "app-server", "cumulative": 1, "ordinal": 1 },
+    { "source": "app-server", "cumulative": 2, "ordinal": 2 },
+    { "source": "app-server", "cumulative": 2, "ordinal": 2 },
+    { "source": "rollout", "cumulative": 2, "ordinal": 2 },
+    { "source": "rollout", "cumulative": 3, "ordinal": 3 },
+    { "live": false },
+    { "source": "rollout", "cumulative": 4, "ordinal": 4 },
+    { "source": "rollout", "cumulative": 1, "ordinal": 1 }
+  ]
+}

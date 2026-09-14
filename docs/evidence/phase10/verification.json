@@ -1,0 +1,179 @@
+{
+  "recordedAt": "2026-09-13T11:35:02.618487+00:00",
+  "status": "PARTIAL",
+  "fullRegression": {
+    "command": "npm test -- --reporter=dot",
+    "exitCode": 1,
+    "files": 78,
+    "passedFiles": 74,
+    "failedFiles": 4,
+    "tests": 1099,
+    "passedTests": 1081,
+    "failedTests": 18,
+    "failures": [
+      {
+        "file": "tests/ExternalAttach.test.ts",
+        "case": "外部附着与连接管理 > 共享候选握手一次后直接供 Source 使用，退出只关闭 client",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ExternalAttach.test.ts",
+        "case": "外部附着与连接管理 > 连接前 socket 证据变化时拒绝建立 client",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ExternalAttach.test.ts",
+        "case": "外部附着与连接管理 > 连接前 permission 证据变化时拒绝建立 client",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ExternalAttach.test.ts",
+        "case": "外部附着与连接管理 > 连接前 process 证据变化时拒绝建立 client",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ExternalAttach.test.ts",
+        "case": "外部附着与连接管理 > 身份或版本无法确认的 external 不能转为 owned spawn",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ExternalAttach.test.ts",
+        "case": "外部附着与连接管理 > 未承载指定线程的 shared runtime 不会收到 resume",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ExternalProcessSafety.test.ts",
+        "case": "真实 OS 子进程安全（合成 server，非 Codex runtime 验收） > external 模式 SIGINT 退出只终止自有 proxy，外部服务仍可重新附着",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ExternalProcessSafety.test.ts",
+        "case": "真实 OS 子进程安全（合成 server，非 Codex runtime 验收） > external 模式 SIGTERM 退出只终止自有 proxy，外部服务仍可重新附着",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ExternalProcessSafety.test.ts",
+        "case": "真实 OS 子进程安全（合成 server，非 Codex runtime 验收） > external 模式 uncaughtException 退出只终止自有 proxy，外部服务仍可重新附着",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ExternalProcessSafety.test.ts",
+        "case": "真实 OS 子进程安全（合成 server，非 Codex runtime 验收） > external 模式 stop 退出只终止自有 proxy，外部服务仍可重新附着",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ManagedDaemon.test.ts",
+        "case": "Managed daemon 的显式策略与发现范围 > 同名 socket 只有在本次 CODEX_HOME 内才可标为 managed（正确 home=false）",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ManagedDaemon.test.ts",
+        "case": "Managed daemon 的显式策略与发现范围 > 同名 socket 只有在本次 CODEX_HOME 内才可标为 managed（正确 home=true）",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/ManagedDaemon.test.ts",
+        "case": "Managed daemon 的显式策略与发现范围 > 自然存在外部候选时不启动第二个 managed",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/RuntimeDiscovery.test.ts",
+        "case": "Runtime discovery 的真实文件与合成进程证据 > socket、进程、owner 与版本共同提供候选证据，尚未 probe 不宣称兼容",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/RuntimeDiscovery.test.ts",
+        "case": "Runtime discovery 的真实文件与合成进程证据 > PID 文件与真实 socket PID 不同则保持 mismatch，不修改旁证文件",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/RuntimeDiscovery.test.ts",
+        "case": "Runtime discovery 的真实文件与合成进程证据 > 宽松权限和不同 owner 均拒绝；发现不执行 chmod",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/RuntimeDiscovery.test.ts",
+        "case": "Runtime discovery 的真实文件与合成进程证据 > 进程出生信息改变会产生新的 runtime ID",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      },
+      {
+        "file": "tests/RuntimeDiscovery.test.ts",
+        "case": "Runtime discovery 的真实文件与合成进程证据 > 不推断 PATH CLI 就是外部 server 的版本",
+        "cause": "Unix socket listen EPERM：沙箱不允许创建测试监听端点"
+      }
+    ],
+    "log": "full-regression.log",
+    "originalLogSha256": "09ec99d16bc7a8908f9427fd17f92575d08b934dd3c896661630085213dc3e75"
+  },
+  "baseline": {
+    "files": 75,
+    "passedFiles": 71,
+    "failedFiles": 4,
+    "tests": 1044,
+    "passedTests": 1026,
+    "failedTests": 18,
+    "sameFailureCause": true,
+    "originalLogSha256": "7de255c3ea7c05ba0d4cb181a4476441cf5a784b37c00d7e54bd8d7954f02119"
+  },
+  "availableRegression": {
+    "command": "npm test -- --reporter=dot --exclude tests/RuntimeDiscovery.test.ts --exclude tests/ExternalAttach.test.ts --exclude tests/ManagedDaemon.test.ts --exclude tests/ExternalProcessSafety.test.ts",
+    "exitCode": 0,
+    "files": 74,
+    "tests": 1058,
+    "log": "available-regression.log",
+    "note": "上述四文件另有 23 项在完整运行中通过，排除后的结果不代表完整回归"
+  },
+  "newPhase10Tests": 55,
+  "typecheck": {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "log": "typecheck.log"
+  },
+  "strictTypes": {
+    "command": "./node_modules/.bin/tsc --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --strict --esModuleInterop --skipLibCheck src/**/*.ts tests/**/*.ts",
+    "exitCode": 0,
+    "note": "命令成功结束，无输出；原始日志为空"
+  },
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "log": "build.log",
+    "javaScriptSha256": "40646bf8c5ba034050a3a881921b2b565a6204d7d47e8e4ce3570a6bd278858f",
+    "matchesFinalSoak": true,
+    "hashAlgorithm": "dist 中所有 .js 的相对路径按字典序排列，依次以 UTF-8 路径和文件字节更新 SHA-256；不含 source map"
+  },
+  "scriptSyntax": [
+    {
+      "command": "node --check scripts/phase10-soak.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node --check scripts/phase10-benchmark.mjs",
+      "exitCode": 0
+    }
+  ],
+  "benchmark": {
+    "requests": 10000,
+    "exitCode": 0,
+    "evidence": "合成回放与本地测试协议进程",
+    "report": "benchmark.json"
+  },
+  "finalSoak": {
+    "exitCode": 0,
+    "report": "real-soak.json",
+    "sampleCount": 31,
+    "completedRequestedDuration": true,
+    "violations": [],
+    "failure": null,
+    "cleanupFailure": null,
+    "resourcesAfterStop": {},
+    "outputListenersAfterStop": []
+  },
+  "approval": {
+    "action": "扩大沙箱权限执行完整 npm test 回归",
+    "status": "自动审批拒绝",
+    "reason": "审批服务 HTTP 404，配置的审批模型 gpt-5.6-luna 不受上游支持",
+    "evidence": "本任务工具回执；不是 npm 测试错误",
+    "bypassed": false
+  }
+}

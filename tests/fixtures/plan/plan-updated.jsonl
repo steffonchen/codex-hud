@@ -1,0 +1,2 @@
+{"timestamp":"2026-08-25T06:22:40.033Z","type":"response_item","payload":{"type":"function_call","name":"update_plan","arguments":"{\"explanation\":\"根据已确认的执行结果更新清单。\",\"plan\":[{\"status\":\"completed\",\"step\":\"检查结构\"},{\"status\":\"in_progress\",\"step\":\"实现工具函数\"},{\"status\":\"pending\",\"step\":\"补充边界测试\"},{\"status\":\"pending\",\"step\":\"验证结果\"}]}","call_id":"plan-a-4"}}
+{"timestamp":"2026-08-25T06:22:40.041Z","type":"response_item","payload":{"type":"function_call_output","call_id":"plan-a-4","output":"Plan updated"}}

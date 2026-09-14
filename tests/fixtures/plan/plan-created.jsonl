@@ -1,0 +1,5 @@
+{"timestamp":"2026-08-24T10:28:29.937Z","type":"session_meta","payload":{"id":"plan-a-1","timestamp":"2026-08-24T10:28:21.989Z","cwd":"/fixture/plan-project","originator":"codex-tui","cli_version":"0.149.1","source":"cli"}}
+{"timestamp":"2026-08-25T06:20:58.531Z","type":"event_msg","payload":{"type":"task_started","turn_id":"plan-a-2","started_at":1787638858,"model_context_window":258400}}
+{"timestamp":"2026-08-25T06:20:58.540Z","type":"turn_context","payload":{"turn_id":"plan-a-2","model":"fixture-model","effort":"xhigh","collaboration_mode":{"mode":"default","settings":{"model":"fixture-model","reasoning_effort":"xhigh","developer_instructions":null}}}}
+{"timestamp":"2026-08-25T06:21:21.984Z","type":"response_item","payload":{"type":"function_call","name":"update_plan","arguments":"{\"plan\":[{\"status\":\"in_progress\",\"step\":\"检查结构\"},{\"status\":\"pending\",\"step\":\"实现工具函数\"},{\"status\":\"pending\",\"step\":\"补充边界测试\"},{\"status\":\"pending\",\"step\":\"验证结果\"}]}","call_id":"plan-a-3"}}
+{"timestamp":"2026-08-25T06:21:22.004Z","type":"response_item","payload":{"type":"function_call_output","call_id":"plan-a-3","output":"Plan updated"}}

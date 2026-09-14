@@ -1,0 +1,240 @@
+{
+  "extractedOn": "2026-09-13",
+  "sourceDate": "2026-09-12",
+  "description": "从两份已定位的本机真实 rollout 有界提取；只保留用量相关白名单字段。两者不声明为同一真实父子树。",
+  "preservedFields": [
+    "input_tokens",
+    "cached_input_tokens",
+    "cache_write_input_tokens",
+    "output_tokens",
+    "reasoning_output_tokens",
+    "total_tokens",
+    "model_context_window"
+  ],
+  "sources": [
+    {
+      "fixture": "main-sequence.jsonl",
+      "sourceNameSha256": "b2ca1a26ff29975d4bc649ea3f26dd77ab2c6390899d0dd098a21442f0f463af",
+      "writerVersion": "0.153.4",
+      "sourceLinesRead": 111,
+      "sourceBytesRead": 2566922,
+      "lineMap": [
+        {
+          "fixtureLine": 1,
+          "sourceLine": 1,
+          "type": "session_meta"
+        },
+        {
+          "fixtureLine": 2,
+          "sourceLine": 8,
+          "type": "turn_context"
+        },
+        {
+          "fixtureLine": 3,
+          "sourceLine": 20,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 4,
+          "sourceLine": 30,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 5,
+          "sourceLine": 39,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 6,
+          "sourceLine": 45,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 7,
+          "sourceLine": 54,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 8,
+          "sourceLine": 63,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 9,
+          "sourceLine": 73,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 10,
+          "sourceLine": 78,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 11,
+          "sourceLine": 87,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 12,
+          "sourceLine": 96,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 13,
+          "sourceLine": 106,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 14,
+          "sourceLine": 111,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        }
+      ],
+      "tokenEvents": 12,
+      "firstUsage": {
+        "total_token_usage": {
+          "input_tokens": 22066,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 22063,
+          "output_tokens": 425,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 22491
+        },
+        "last_token_usage": {
+          "input_tokens": 22066,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 22063,
+          "output_tokens": 425,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 22491
+        },
+        "model_context_window": 258400
+      },
+      "lastUsage": {
+        "total_token_usage": {
+          "input_tokens": 649981,
+          "cached_input_tokens": 554422,
+          "cache_write_input_tokens": 95526,
+          "output_tokens": 10935,
+          "reasoning_output_tokens": 2668,
+          "total_tokens": 660916
+        },
+        "last_token_usage": {
+          "input_tokens": 95529,
+          "cached_input_tokens": 89932,
+          "cache_write_input_tokens": 5594,
+          "output_tokens": 2098,
+          "reasoning_output_tokens": 516,
+          "total_tokens": 97627
+        },
+        "model_context_window": 258400
+      }
+    },
+    {
+      "fixture": "child-sequence.jsonl",
+      "sourceNameSha256": "cf604a5feb820f75c3f1d6b35a2c1372186fc18dc4db6cc9147bcf395fa8a1df",
+      "writerVersion": "0.153.4",
+      "sourceLinesRead": 24,
+      "sourceBytesRead": 182597,
+      "lineMap": [
+        {
+          "fixtureLine": 1,
+          "sourceLine": 1,
+          "type": "session_meta"
+        },
+        {
+          "fixtureLine": 2,
+          "sourceLine": 8,
+          "type": "turn_context"
+        },
+        {
+          "fixtureLine": 3,
+          "sourceLine": 11,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 4,
+          "sourceLine": 12,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 5,
+          "sourceLine": 13,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 6,
+          "sourceLine": 23,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        },
+        {
+          "fixtureLine": 7,
+          "sourceLine": 24,
+          "type": "event_msg",
+          "payloadType": "token_count"
+        }
+      ],
+      "tokenEvents": 5,
+      "firstUsage": {
+        "total_token_usage": {
+          "input_tokens": 22167,
+          "cached_input_tokens": 21761,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 634,
+          "reasoning_output_tokens": 327,
+          "total_tokens": 22801
+        },
+        "last_token_usage": {
+          "input_tokens": 22167,
+          "cached_input_tokens": 21761,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 634,
+          "reasoning_output_tokens": 327,
+          "total_tokens": 22801
+        },
+        "model_context_window": 258400
+      },
+      "lastUsage": {
+        "total_token_usage": {
+          "input_tokens": 22167,
+          "cached_input_tokens": 21761,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 634,
+          "reasoning_output_tokens": 327,
+          "total_tokens": 22801
+        },
+        "last_token_usage": {
+          "input_tokens": 22167,
+          "cached_input_tokens": 21761,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 634,
+          "reasoning_output_tokens": 327,
+          "total_tokens": 22801
+        },
+        "model_context_window": 258400
+      }
+    }
+  ],
+  "limitations": [
+    "同线程真实模型切换未观测到",
+    "本次样本中的额度窗口、credits、plan_type 和触限字段均为空",
+    "压缩测试复用既有 2026-09-11 真实 fixture，未伪称来自上述两个序列",
+    "官方定价本轮无法联网复核；真实正数缓存写入的计费映射未确认"
+  ]
+}

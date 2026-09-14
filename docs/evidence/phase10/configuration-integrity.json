@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-09-13T12:08:16.114434+00:00",
+  "files": [
+    {
+      "path": "~/.codex/config.toml",
+      "beforeSha256": "67262bf4557d91b2fe27c92bc146d34e1cb8808921a0483957d82686ae465de1",
+      "afterSha256": "67262bf4557d91b2fe27c92bc146d34e1cb8808921a0483957d82686ae465de1",
+      "unchanged": true
+    },
+    {
+      "path": "~/.codex-hud/config.toml",
+      "beforeSha256": "be903bf9937bda8529c4802f9887ae025bd6b3461f4e199f3191a0a699bd93c3",
+      "afterSha256": "be903bf9937bda8529c4802f9887ae025bd6b3461f4e199f3191a0a699bd93c3",
+      "unchanged": true
+    }
+  ],
+  "configContentsExported": false,
+  "projectPackageLockUnchanged": true
+}

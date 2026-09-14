@@ -1,0 +1,140 @@
+{
+  "evidence": "实际 debug stderr 中的内部诊断白名单；未归档完整业务快照与正文",
+  "originalSha256": "eabd2e6371790cfad30d75bde928a2014d0036b237442412c88e4a5d7a6e70a9",
+  "内部诊断": {
+    "运行时": {
+      "authority": "fallback-rollout",
+      "connection": "failed",
+      "ownership": "unknown"
+    },
+    "来源": {
+      "kind": "rollout",
+      "state": "fallback",
+      "lastEventAt": 1789297361995,
+      "ageMs": 719,
+      "lastCheckedAt": 1789297362714,
+      "staleThresholdMs": 60000
+    },
+    "会话": {
+      "session": "01a09a06",
+      "thread": "01a09a06",
+      "switches": 0
+    },
+    "事件": {
+      "received": 1862,
+      "accepted": 1862,
+      "processed": 1862,
+      "deduplicated": 0,
+      "outOfOrder": 0,
+      "dropped": 0,
+      "invalid": 0,
+      "unknown": 0,
+      "errors": 0,
+      "rawReceived": 1624,
+      "rawInvalid": 0,
+      "rawUnknown": 769
+    },
+    "渲染": {
+      "count": 1,
+      "errors": 0,
+      "lastRenderAt": 1789297362714
+    },
+    "恢复": {
+      "state": "fallback",
+      "reconnects": 0,
+      "fallbacks": 1,
+      "recoveries": 0
+    },
+    "性能毫秒": {
+      "startup": {
+        "count": 1,
+        "lastMs": 767.0651670000001,
+        "maxMs": 767.0651670000001,
+        "meanMs": 767.0651670000001
+      },
+      "discovery": {
+        "count": 1,
+        "lastMs": 541.532958,
+        "maxMs": 541.532958,
+        "meanMs": 541.532958
+      },
+      "firstEvent": {
+        "count": 1,
+        "lastMs": 546.748417,
+        "maxMs": 546.748417,
+        "meanMs": 546.748417
+      },
+      "firstRender": {
+        "count": 1,
+        "lastMs": 771.9740830000001,
+        "maxMs": 771.9740830000001,
+        "meanMs": 771.9740830000001
+      },
+      "eventToReducer": {
+        "count": 1862,
+        "lastMs": 0.003624999999942702,
+        "maxMs": 0.25916700000004766,
+        "meanMs": 0.006154172395273594
+      },
+      "reducer": {
+        "count": 1862,
+        "lastMs": 0.003958000000011452,
+        "maxMs": 0.3633340000000089,
+        "meanMs": 0.007240853383458972
+      },
+      "reducerToRender": {
+        "count": 1,
+        "lastMs": 103.33458300000007,
+        "maxMs": 103.33458300000007,
+        "meanMs": 103.33458300000007
+      },
+      "render": {
+        "count": 1,
+        "lastMs": 4.151165999999989,
+        "maxMs": 4.151165999999989,
+        "meanMs": 4.151165999999989
+      }
+    },
+    "内存与资源": {
+      "heapUsed": 21988408,
+      "rss": 95551488,
+      "toolCount": 21,
+      "agentCount": 6,
+      "historySize": 80,
+      "retainedTurns": 1,
+      "turnHistoryLimited": 0,
+      "dedupEntries": 650,
+      "sourceThreads": 6,
+      "sourceWatermarks": 84,
+      "watermarkIdentities": 84,
+      "tokenPending": 0,
+      "agentReaders": 5,
+      "retiredAgentFiles": 0,
+      "agentDiagnosticEntries": 0,
+      "stateSubscribers": 0,
+      "pendingStateNotifications": 0,
+      "appConnections": 0,
+      "appEventListeners": 1,
+      "appStatusListeners": 1,
+      "appDiagnosticListeners": 1,
+      "appThreads": 6,
+      "appBufferedEvents": 0,
+      "appBufferedBytes": 0,
+      "reconnectTimers": 1,
+      "pendingRequests": 0,
+      "pendingWrites": 0,
+      "activeWatchers": 0,
+      "providerTimers": 0,
+      "rolloutPollTimers": 0,
+      "runtimeClients": 0,
+      "runtimePendingClients": 0,
+      "failedCleanupClients": 0,
+      "pendingApprovals": 0,
+      "trackedAgents": 6,
+      "retiredAgents": 0,
+      "retiredAgentTurns": 0,
+      "uncertainTurns": 0
+    },
+    "告警": []
+  }
+}

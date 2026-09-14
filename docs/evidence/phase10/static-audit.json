@@ -1,0 +1,37 @@
+{
+  "evidence": "额外启用未使用项与不可达代码诊断；项目规定的 typecheck 和严格类型检查另已通过",
+  "options": {
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false
+  },
+  "diagnosticCount": 3,
+  "introducedDiagnosticCount": 0,
+  "preExistingDiagnostics": [
+    {
+      "file": "src/providers/codex/RolloutAgentProvider.ts",
+      "line": 7,
+      "code": 6133,
+      "message": "'RolloutReader' is declared but its value is never read.",
+      "origin": "基线已有，相关声明或整个方法与原始版本一致",
+      "baselineConfirmed": true
+    },
+    {
+      "file": "src/providers/codex/runtime/RuntimeConnectionManager.ts",
+      "line": 211,
+      "code": 6133,
+      "message": "'method' is declared but its value is never read.",
+      "origin": "基线已有，相关声明或整个方法与原始版本一致",
+      "baselineConfirmed": true
+    },
+    {
+      "file": "src/core/HudEvent.ts",
+      "line": 1,
+      "code": 6196,
+      "message": "'TokenUsage' is declared but never used.",
+      "origin": "基线已有，相关声明或整个方法与原始版本一致",
+      "baselineConfirmed": true
+    }
+  ],
+  "action": "保留与本任务无关的既有未使用项，没有扩大清理范围"
+}

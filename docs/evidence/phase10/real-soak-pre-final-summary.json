@@ -1,0 +1,42 @@
+{
+  "evidence": "较早构建的独立 30 分钟真实 Rollout 观测摘要；不能替代最终构建验收，也不与最终轮合并为连续一小时",
+  "node": "v23.11.0",
+  "os": "darwin",
+  "arch": "arm64",
+  "codex": "codex-cli 0.154.0",
+  "rollout": "0.153.4",
+  "buildSha256": "d4e3429ae57ac87ec0eee8cb496843a6e0aecc283b4ce97527dae5e8bbf6278f",
+  "gcAvailable": true,
+  "requestedMinutes": 30,
+  "interruptions": [],
+  "startedAt": "2026-09-13T10:19:02.144Z",
+  "violations": [],
+  "durationMs": 1800080.0631249999,
+  "completedRequestedDuration": true,
+  "finishedAt": "2026-09-13T10:49:02.249Z",
+  "resourcesAfterStop": {},
+  "outputListenersAfterStop": [],
+  "originalSha256": "6af2963b5c6874336beed9c2146b6a1acc3a0b178111d538570c3a7c8b512878",
+  "sampleCount": 31,
+  "parityChecks": 31,
+  "parityMatches": 31,
+  "finalEvents": {
+    "received": 1765,
+    "accepted": 1765,
+    "processed": 1765,
+    "deduplicated": 0,
+    "outOfOrder": 0,
+    "dropped": 0,
+    "invalid": 0,
+    "unknown": 0,
+    "errors": 0,
+    "rawReceived": 1537,
+    "rawInvalid": 0,
+    "rawUnknown": 726
+  },
+  "finalRender": {
+    "count": 2280,
+    "errors": 0,
+    "lastRenderAt": 1789296542220
+  }
+}

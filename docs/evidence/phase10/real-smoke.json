@@ -1,0 +1,144 @@
+{
+  "incrementalBytes": 1869,
+  "unchangedSnapshot": null,
+  "restart": {
+    "sameThread": true,
+    "sameOffset": true,
+    "sameUsage": true
+  },
+  "widths": [
+    {
+      "width": 30,
+      "maxLine": 18,
+      "withinWidth": true,
+      "ansiFree": true,
+      "errors": []
+    },
+    {
+      "width": 40,
+      "maxLine": 22,
+      "withinWidth": true,
+      "ansiFree": true,
+      "errors": []
+    },
+    {
+      "width": 50,
+      "maxLine": 22,
+      "withinWidth": true,
+      "ansiFree": true,
+      "errors": []
+    },
+    {
+      "width": 60,
+      "maxLine": 22,
+      "withinWidth": true,
+      "ansiFree": true,
+      "errors": []
+    },
+    {
+      "width": 80,
+      "maxLine": 22,
+      "withinWidth": true,
+      "ansiFree": true,
+      "errors": []
+    },
+    {
+      "width": 100,
+      "maxLine": 97,
+      "withinWidth": true,
+      "ansiFree": true,
+      "errors": []
+    },
+    {
+      "width": 120,
+      "maxLine": 97,
+      "withinWidth": true,
+      "ansiFree": true,
+      "errors": []
+    },
+    {
+      "width": 140,
+      "maxLine": 97,
+      "withinWidth": true,
+      "ansiFree": true,
+      "errors": []
+    },
+    {
+      "width": 160,
+      "maxLine": 97,
+      "withinWidth": true,
+      "ansiFree": true,
+      "errors": []
+    }
+  ],
+  "capabilities": {
+    "model": "gpt-6-astra",
+    "reasoning": "high",
+    "context": true,
+    "token": true,
+    "cache": "measured",
+    "quota": "empty",
+    "cost": "unknown",
+    "tools": {
+      "active": 1,
+      "recent": 20,
+      "withDuration": 20,
+      "completed": 18
+    },
+    "activity": "running",
+    "agents": {
+      "total": 6,
+      "children": 5,
+      "completed": 5,
+      "correlation": "strong"
+    },
+    "plan": false,
+    "mcp": 0,
+    "skills": {
+      "found": 15,
+      "available": 14,
+      "active": 0
+    }
+  },
+  "errors": [],
+  "resourcesAfterStop": {
+    "heapUsed": 22050928,
+    "rss": 114065408,
+    "toolCount": 21,
+    "agentCount": 6,
+    "historySize": 80,
+    "appConnections": 0,
+    "appEventListeners": 0,
+    "appStatusListeners": 0,
+    "appDiagnosticListeners": 0,
+    "appThreads": 0,
+    "appBufferedEvents": 0,
+    "appBufferedBytes": 0,
+    "reconnectTimers": 0,
+    "pendingRequests": 0,
+    "pendingWrites": 0,
+    "runtimeClients": 0,
+    "runtimePendingClients": 0,
+    "failedCleanupClients": 0,
+    "pendingApprovals": 0,
+    "dedupEntries": 651,
+    "sourceThreads": 6,
+    "sourceWatermarks": 84,
+    "watermarkIdentities": 84,
+    "tokenPending": 0,
+    "retainedTurns": 1,
+    "turnHistoryLimited": 0,
+    "uncertainTurns": 0,
+    "trackedAgents": 6,
+    "retiredAgents": 0,
+    "retiredAgentTurns": 0,
+    "agentReaders": 5,
+    "retiredAgentFiles": 0,
+    "agentDiagnosticEntries": 0,
+    "stateSubscribers": 0,
+    "pendingStateNotifications": 0,
+    "activeWatchers": 0,
+    "providerTimers": 0,
+    "rolloutPollTimers": 0
+  }
+}

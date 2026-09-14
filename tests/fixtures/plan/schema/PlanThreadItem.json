@@ -1,0 +1,25 @@
+{
+  "description": "EXPERIMENTAL - proposed plan item content. The completed plan item is authoritative and may not match the concatenation of `PlanDelta` text.",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "plan"
+      ],
+      "title": "PlanThreadItemType",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "text",
+    "type"
+  ],
+  "title": "PlanThreadItem",
+  "type": "object"
+}

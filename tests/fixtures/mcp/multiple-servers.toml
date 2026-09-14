@@ -1,0 +1,10 @@
+[mcp_servers.node_repl]
+command = "example-command"
+args = []
+startup_timeout_sec = 120
+
+[mcp_servers.computer-use]
+command = "example-command"
+args = [ "[已省略]" ]
+cwd = "/fixture/workspace"
+enabled = false

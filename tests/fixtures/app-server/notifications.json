@@ -1,0 +1,170 @@
+[
+  {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+      "threadId": "thread-a",
+      "turnId": "turn-a",
+      "tokenUsage": {
+        "total": {
+          "inputTokens": 100,
+          "cachedInputTokens": 20,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 10,
+          "reasoningOutputTokens": 2,
+          "totalTokens": 110
+        },
+        "last": {
+          "inputTokens": 100,
+          "cachedInputTokens": 20,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 10,
+          "reasoningOutputTokens": 2,
+          "totalTokens": 110
+        },
+        "modelContextWindow": 1000
+      }
+    }
+  },
+  {
+    "method": "turn/plan/updated",
+    "params": {
+      "threadId": "thread-a",
+      "turnId": "turn-a",
+      "explanation": null,
+      "plan": [
+        {
+          "step": "读取本地文件",
+          "status": "inProgress"
+        }
+      ]
+    }
+  },
+  {
+    "method": "item/started",
+    "params": {
+      "threadId": "thread-a",
+      "turnId": "turn-a",
+      "item": {
+        "type": "commandExecution",
+        "id": "command-a",
+        "pluginId": null,
+        "scriptPath": null,
+        "command": "printf fixture",
+        "cwd": "/example",
+        "processId": null,
+        "source": "agent",
+        "status": "inProgress",
+        "commandActions": [],
+        "aggregatedOutput": null,
+        "exitCode": null,
+        "durationMs": null
+      },
+      "startedAtMs": 1789257600000
+    }
+  },
+  {
+    "method": "item/completed",
+    "params": {
+      "threadId": "thread-a",
+      "turnId": "turn-a",
+      "item": {
+        "type": "commandExecution",
+        "id": "command-a",
+        "pluginId": null,
+        "scriptPath": null,
+        "command": "printf fixture",
+        "cwd": "/example",
+        "processId": null,
+        "source": "agent",
+        "status": "completed",
+        "commandActions": [],
+        "aggregatedOutput": "已脱敏",
+        "exitCode": 0,
+        "durationMs": 5
+      },
+      "completedAtMs": 1789257600005
+    }
+  },
+  {
+    "method": "item/completed",
+    "params": {
+      "threadId": "thread-a",
+      "turnId": "turn-a",
+      "item": {
+        "type": "mcpToolCall",
+        "id": "mcp-a",
+        "server": "example",
+        "tool": "search",
+        "status": "failed",
+        "arguments": {},
+        "appContext": null,
+        "pluginId": null,
+        "readOnlyHint": true,
+        "result": null,
+        "error": {
+          "message": "已脱敏的错误"
+        },
+        "durationMs": 5
+      },
+      "completedAtMs": 1789257600005
+    }
+  },
+  {
+    "method": "item/completed",
+    "params": {
+      "threadId": "thread-a",
+      "turnId": "turn-a",
+      "item": {
+        "type": "collabAgentToolCall",
+        "id": "spawn-a",
+        "tool": "spawnAgent",
+        "status": "completed",
+        "senderThreadId": "thread-a",
+        "receiverThreadIds": [
+          "child-a"
+        ],
+        "prompt": null,
+        "model": null,
+        "reasoningEffort": null,
+        "agentsStates": {
+          "child-a": {
+            "status": "running",
+            "message": null
+          }
+        }
+      },
+      "completedAtMs": 1789257600005
+    }
+  },
+  {
+    "method": "thread/status/changed",
+    "params": {
+      "threadId": "thread-a",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    }
+  },
+  {
+    "method": "account/rateLimits/updated",
+    "params": {
+      "rateLimits": {
+        "limitId": null,
+        "limitName": null,
+        "primary": {
+          "usedPercent": 6,
+          "windowDurationMins": 300,
+          "resetsAt": 2000000000
+        },
+        "secondary": null,
+        "credits": null,
+        "planType": null,
+        "normalModelSlug": null,
+        "individualLimit": null,
+        "spendControlReached": null,
+        "rateLimitReachedType": null
+      }
+    }
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-09-13T12:08:16.114434+00:00",
+  "status": "PASS（本阶段变更范围的最终质量检查）",
+  "utf8NoBom": {
+    "checkedFiles": 107,
+    "issues": []
+  },
+  "trailingWhitespace": [],
+  "addedCodeMarkers": [],
+  "optionalStaticAudit": {
+    "introducedDiagnostics": 0,
+    "preExistingUnusedItems": 3,
+    "details": "static-audit.json"
+  },
+  "scope": {
+    "baselineFiles": 596,
+    "modifiedSourceFiles": 19,
+    "addedSourceFiles": 2,
+    "deletedBaselineFiles": 0,
+    "outsideApprovedScope": [],
+    "modifiedDistFiles": 52,
+    "addedDistFiles": 6,
+    "manifest": "changes.json"
+  },
+  "documentation": {
+    "filesChecked": 7,
+    "localLinksChecked": 62,
+    "brokenLinks": [],
+    "unfinishedDraftMarkers": []
+  },
+  "evidenceConsistency": {
+    "finalBuildSha256": "40646bf8c5ba034050a3a881921b2b565a6204d7d47e8e4ce3570a6bd278858f",
+    "matchesFinalSoak": true,
+    "durationCompleted": true,
+    "samples": 31,
+    "parityMatches": 31,
+    "violations": [],
+    "resourcesAfterStop": {},
+    "outputListenersAfterStop": [],
+    "allActiveDiagnosticResourcesZero": true,
+    "fullTests": 1099,
+    "passedTests": 1081,
+    "environmentLimitedTests": 18,
+    "availableTestsPassed": 1058
+  },
+  "configurationIntegrity": true,
+  "knownCredentialPatternMatches": 0,
+  "limitations": [
+    "质量检查通过不覆盖完整回归中仍失败的 18 项 Unix socket 测试",
+    "未把 3 处既有可选静态诊断改成零诊断，也未实施无关清理",
+    "真实 App Server 与物理 TTY 的限制见完成报告"
+  ]
+}
